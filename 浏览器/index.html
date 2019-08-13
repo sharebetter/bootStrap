@@ -1,0 +1,608 @@
+<!DOCTYPE html>
+<html lang="zh-cn">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>易参保</title>
+    <link href="css/bootstrap.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/newStyle.css">
+    <link type="text/css" rel="stylesheet" href="plugs/swiper/swiper.min.css">
+    <!--[if lt IE 9]>
+    <script src="js/html5shiv.js"></script>
+    <script src="js/respond.min.js"></script>
+    <![endif]-->
+
+</head>
+
+<body>
+<!-- 顶部导航 -->
+<div class="navbar navbar-default navbar-fixed-top" role="navigation" id="menu-nav">
+    <div class="container">
+        <div class="navbar-header">
+            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                <span class="sr-only">切换导航</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            <a class="navbar-brand" href="#">易参保</a>
+        </div>
+        <div class="navbar-collapse collapse">
+            <ul class="nav navbar-nav">
+                <li class="active"><a href="#ad-carousel">首页</a></li>
+                <li id="company-sever"><a href="#summary-container">企业服务<span class="caret"></span></a>
+                    <div class="toggleAll row" role="menu" style="padding-top: 0px; margin-top: 0px; padding-bottom: 0px; margin-bottom: 0px;">
+						<div class="toggleAll_box">
+							<div class="toggleAll_boxLeft">
+								<h3>我们的服务</h3>
+							</div>
+							<div class="toggleAll_boxRight">
+								<h3>我们的产品</h3>
+
+							</div>
+						</div>
+					</div>
+                </li>
+                <li class="dropdown">
+                    <a href="#" class="dropdown-toggle" data-toggle="dropdown">个人服务 <span class="caret"></span></a>
+                    <ul class="dropdown-menu drop-width" role="menu">
+                        <li><a href="#feature-tab" data-tab="tab-chrome">Chrome</a></li>
+                        <li><a href="#feature-tab" data-tab="tab-firefox">Firefox</a></li>
+                        <li><a href="#feature-tab" data-tab="tab-safari">Safari</a></li>
+                        <li><a href="#feature-tab" data-tab="tab-opera">Opera</a></li>
+                        <li><a href="#feature-tab" data-tab="tab-ie">IE</a></li>
+                    </ul>
+                </li>
+                <li><a href="#" data-toggle="modal" data-target="#about-modal">关于我们</a></li>
+            </ul>
+            <ul class="nav navbar-nav navbar-right">
+                <li class="contact"><a href="#"><img class="icon-tel" src="./img/icon-tel.png" />4009-988-988</a></li>
+            </ul>
+        </div>
+    </div>
+</div>
+
+
+<!-- 广告轮播 -->
+<div id="ad-carousel" class="carousel slide" data-ride="carousel">
+    <ol class="carousel-indicators">
+        <li data-target="#ad-carousel" data-slide-to="0" class="active"></li>
+        <li data-target="#ad-carousel" data-slide-to="1"></li>
+        <li data-target="#ad-carousel" data-slide-to="2"></li>
+        <li data-target="#ad-carousel" data-slide-to="3"></li>
+        <li data-target="#ad-carousel" data-slide-to="4"></li>
+    </ol>
+    <div class="carousel-inner">
+        <div class="item active">
+            <img src="img/chrome-big.jpg" alt="1 slide">
+
+            <div class="container">
+                <div class="carousel-caption">
+                    <h1>Chrome</h1>
+
+                    <p>Google Chrome，又称Google浏览器，是一个由Google（谷歌）公司开发的网页浏览器。</p>
+
+                </div>
+            </div>
+        </div>
+        <div class="item">
+            <img src="img/firefox-big.jpg" alt="2 slide">
+
+            <div class="container">
+                <div class="carousel-caption">
+                    <h1>Firefox</h1>
+
+                    <p>Mozilla Firefox，中文名通常称为“火狐”或“火狐浏览器”，是一个开源网页浏览器。</p>
+
+                </div>
+            </div>
+        </div>
+        <div class="item">
+            <img src="img/safari-big.jpg" alt="3 slide">
+
+            <div class="container">
+                <div class="carousel-caption">
+                    <h1>Safari</h1>
+
+                    <p>Safari，是苹果计算机的最新操作系统Mac OS X中的浏览器。</p>
+
+                </div>
+            </div>
+        </div>
+        <div class="item">
+            <img src="img/opera-big.jpg" alt="4 slide">
+
+            <div class="container">
+                <div class="carousel-caption">
+                    <h1>Opera</h1>
+
+                    <p>Opera浏览器，是一款挪威Opera Software ASA公司制作的支持多页面标签式浏览的网络浏览器。</p>
+
+                    <p><a class="btn btn-lg btn-primary" href="http://www.opera.com/zh-cn" target="_blank"
+                          role="button">点我下载</a></p>
+                </div>
+            </div>
+        </div>
+        <div class="item">
+            <img src="img/ie-big.jpg" alt="5 slide">
+
+            <div class="container">
+                <div class="carousel-caption">
+                    <h1>IE</h1>
+
+                    <p>Internet Explorer，简称 IE，是微软公司推出的一款网页浏览器。</p>
+
+                    <p><a class="btn btn-lg btn-primary" href="http://ie.microsoft.com/" target="_blank"
+                          role="button">点我下载</a></p>
+                </div>
+            </div>
+        </div>
+
+    </div>
+    <a class="left carousel-control" href="#ad-carousel" data-slide="prev"><span
+            class="glyphicon glyphicon-chevron-left"></span></a>
+    <a class="right carousel-control" href="#ad-carousel" data-slide="next"><span
+            class="glyphicon glyphicon-chevron-right"></span></a>
+    <div class="banner_tab">
+        <div class="banner_tabBg"></div>
+        <div class="banner_tabCon">
+            <a class="tab-li" href="#security">
+            <dl>
+                <dt><img class="icon-size" src="https://static.cache.51shebao.com/201907091201/statics/output/images/v5_images/she_icon.png" draggable="false"></dt>
+                <dd>社保</dd>
+            </dl>
+            </a>
+            <a class="tab-li" href="#insurance">
+            <dl>
+                <dt><img class="icon-size" src="https://static.cache.51shebao.com/201907091201/statics/output/images/v5_images/insurance_icon.png" draggable="false"></dt>
+                <dd>综合保障</dd>
+            </dl>
+            </a>
+            <a class="tab-li" href="#canbaojin">
+            <dl>
+                <dt><img class="icon-size" src="https://static.cache.51shebao.com/201907091201/statics/output/images/v5_images/canbaojin_icon.png" draggable="false"></dt>
+                <dd>残保金</dd>
+            </dl>
+            </a>
+        </div>
+    </div>
+</div>
+
+<!-- 易参保服务 -->
+<section class="my-service row">
+    <p class="child-title">易参保服务</p>
+    <ul class="ser-list">
+        <li class="col-sm-12 col-md-4">
+            <div class="ser-item">
+                <img class="ser-img" src="./img/server01.png">
+                <p class="label">服务区域 <span>200+城市</span></p>
+                <p class="content">目前服务区域覆盖福建、广西、山西、安徽 四个省份，200多个城市</p>
+                <div class="ser-code ser-code-pay">
+                    <img src="./img/ic-qrcode-ylzrl.png">
+                </div>
+                <div class="btn btn-pay">
+                    去代缴
+                </div>
+            </div>
+        </li>
+        <li class="col-sm-12 col-md-4">
+            <div class="ser-item">
+                <img class="ser-img" src="./img/server02.png">
+                <p class="label">参保情况 <span>一键查询</span></p>
+                <p class="content">医疗保险、养老保险、生育保险等参保信息 轻松查询</p>
+                <div class="ser-code ser-code-search">
+                    <img src="./img/ic-qrcode-jjsb.png">
+                </div>
+                <div class="btn btn-search">
+                    去查询
+                </div>
+            </div>
+        </li>
+        <li class="col-sm-12 col-md-4">
+            <div class="ser-item">
+                <img class="ser-img" src="./img/server03.png">
+                <p class="label">专业社区 <span>给你解答</span></p>
+                <p class="content">新政资讯，政策解读，专业的社保信息社区， 解决你的社保疑问</p>
+                <div class="ser-code ser-code-watch">
+                    <img src="./img/baoshuWX.png">
+                </div>
+                <div class="btn btn-watch">
+                    去看看
+                </div>
+            </div>
+        </li>
+    </ul>
+</section>
+<!-- 社保代缴服务流程 -->
+<section class="my-flow">
+    <p class="child-title">社保代缴服务流程</p>
+    <ul class="flow-list">
+        <li class="flow-item">
+        <img src="./img/flow01.png">
+        <p>关注微信号或扫描使用小程序</p>
+        </li>
+        <li class="flow-item">
+        <img src="./img/flow02.png">
+        <p>提交参保信息并在线支付</p>
+        </li>
+        <li class="flow-item">
+        <img src="./img/flow03.png">
+        <p>使用公众号实时查看缴费情况</p>
+        </li>
+        <li class="flow-item">
+        <img src="./img/flow04.png">
+        <p>1-2月后可在公众号查询参保明细</p>
+        </li>
+    </ul>
+</section>
+<!-- 主要内容 -->
+<div class="container summary">
+
+    <!-- 简介 -->
+    <div class="row" id="summary-container">
+        <div class="col-md-4">
+            <img class="img-circle" src="img/chrome-logo-small.jpg" alt="chrome">
+
+            <h2>Chrome</h2>
+
+            <p>Google Chrome，又称Google浏览器，是一个由Google（谷歌）公司开发的网页浏览器。</p>
+
+            <p><a class="btn btn-default" href="#" role="button">点我下载</a></p>
+        </div>
+        <div class="col-md-4">
+            <img class="img-circle" src="img/firefox-logo-small.jpg" alt="firefox">
+
+            <h2>Firefox</h2>
+
+            <p>Mozilla Firefox，中文名通常称为“火狐”或“火狐浏览器”，是一个开源网页浏览器。</p>
+
+            <p><a class="btn btn-default" href="#" role="button">点我下载</a></p>
+        </div>
+        <div class="col-md-4">
+            <img class="img-circle" src="img/safari-logo-small.jpg" alt="safari">
+
+            <h2>Safari</h2>
+
+            <p>Safari，是苹果计算机的最新操作系统Mac OS X中的浏览器。</p>
+
+            <p><a class="btn btn-default" href="#" role="button">点我下载</a></p>
+        </div>
+    </div>
+
+    <!-- 特性 -->
+
+    <hr class="feature-divider">
+
+    <ul class="nav nav-tabs" role="tablist" id="feature-tab">
+        <li class="active"><a href="#tab-chrome" role="tab" data-toggle="tab">社保</a></li>
+        <li><a href="#tab-firefox" role="tab" data-toggle="tab">综合保障</a></li>
+        <li><a href="#tab-safari" role="tab" data-toggle="tab">残保金</a></li>
+        <li><a href="#tab-opera" role="tab" data-toggle="tab">Opera</a></li>
+        <li><a href="#tab-ie" role="tab" data-toggle="tab">IE</a></li>
+    </ul>
+
+    <div class="tab-content">
+        <div class="tab-pane active" id="tab-chrome">
+            <div class="row feature">
+                <div class="col-md-7">
+
+                    <h2 class="feature-heading">社保 <span
+                            class="text-muted">100%直营服务，48小时极速反馈</span></h2>
+
+                    <p class="lead">业内开创100%全直营服务“京东模式”，48小时反馈时限承诺
+                            14年从业经验，3万+企业客户，50万+用户
+                            原创研发101HR共享服务平台，领先技术，保障客户信息安全</p>
+                </div>
+                <div class="col-md-5">
+                    <img class="feature-image img-responsive" src="img/chrome-logo.jpg"
+                         alt="Chrome">
+                </div>
+            </div>
+        </div>
+        <div class="tab-pane" id="tab-firefox">
+            <div class="row feature">
+                <div class="col-md-5">
+                    <img class="feature-image img-responsive" src="img/firefox-logo.jpg"
+                         alt="Firefox">
+                </div>
+                <div class="col-md-7">
+
+                    <h2 class="feature-heading">综合保障 <span class="text-muted">综合保障无缝衔接，高效理赔更省心</span>
+                    </h2>
+
+                    <p class="lead">服务范围覆盖全国，涵盖员工门急诊，住院，生育多种需求标准化服务体系，高效理赔流程，省时，省心，省力大平台议价，性价比更高，可实时查询办理进度</p>
+                </div>
+            </div>
+        </div>
+        <div class="tab-pane" id="tab-safari">
+            <div class="row feature">
+                <div class="col-md-7">
+
+                    <h2 class="feature-heading">残保金 <span class="text-muted">专家团队一站式服务</span></h2>
+
+                    <p class="lead">专家团队，顶层设计，咨询精算，合规筹划
+                            从招聘到审核减免，专家指导，一站式服务
+                            全流程、标准化、系统化多维度保障，降低风险</p>
+                </div>
+                <div class="col-md-5">
+                    <img class="feature-image img-responsive" src="img/safari-logo.jpg"
+                         alt="Safari">
+                </div>
+            </div>
+        </div>
+        <div class="tab-pane" id="tab-opera">
+            <div class="row feature">
+                <div class="col-md-5">
+                    <img class="feature-image img-responsive" src="img/opera-logo.jpg"
+                         alt="Opera">
+                </div>
+                <div class="col-md-7">
+
+                    <h2 class="feature-heading">Opera <span class="text-muted">小众但易用</span>
+                    </h2>
+
+                    <p class="lead">Opera浏览器，是一款挪威Opera Software ASA公司制作的支持多页面标签式浏览的网络浏览器。
+                        是跨平台浏览器可以在Windows、Mac和Linux三个操作系统平台上运行。.</p>
+                </div>
+            </div>
+        </div>
+        <div class="tab-pane" id="tab-ie">
+            <div class="row feature">
+                <div class="col-md-7">
+
+                    <h2 class="feature-heading">IE <span class="text-muted">你懂的</span></h2>
+
+                    <p class="lead">Internet Explorer，原称Microsoft Internet Explorer(6版本以前)和Windows Internet
+                        Explorer(7，8，9，10版本)，
+                        简称IE，是美国微软公司推出的一款网页浏览器。它采用的排版引擎(俗称内核)为Trident。</p>
+                </div>
+                <div class="col-md-5">
+                    <img class="feature-image img-responsive" src="img/ie-logo.jpg"
+                         alt="IE">
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- 关于 -->
+    <div class="modal fade" id="about-modal" tabindex="-1" role="dialog" aria-labelledby="modal-label"
+         aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal"><span
+                            aria-hidden="true">&times;</span><span class="sr-only">关闭</span></button>
+                    <h4 class="modal-title" id="modal-label">关于</h4>
+                </div>
+                <div class="modal-body">
+                    <p>慕课网隶属于北京慕课科技中心(有限合伙)，是一家从事互联网免费教学的网络教育公司。秉承“开拓、创新、公平、分享”的精神，
+                        将互联网特性全面的应用在教育领域，致力于为教育机构及求学者打造一站式互动在线教育品牌。</p>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-default" data-dismiss="modal">了解了</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <footer>
+        <p class="pull-right"><a href="#top">回到顶部</a></p>
+
+
+    </footer>
+
+</div>
+<!-- 合作伙伴 -->
+<section class="my-partner">
+    <p class="swiper-child-title">他们都说好</p>
+    <div class="swiper-container">
+        <div class="swiper-wrapper">
+        <div class="swiper-slide swiper-slide-center none-effect">
+            <img src="./img/code.png" class="portrait">
+            <div class="info">
+            <h1><span>许子卿</span><label>上市公司HR</label></h1>
+            <p>公司越做越大，各地都有公司的分点，要解决不同地市的员工社保公积金的问题真是要花费非常多的时间，每个地方的政策都不一样，经常搞乱，后来和你们合作之后，再也没这个烦恼了，你们专业度很高，政策的解读也非常快，而且经常分享干货，现在我都快成为半个社保专家了。</p>
+            </div>
+        </div>
+        <div class="swiper-slide">
+            <img src="./img/code.png" class="portrait">
+            <div class="info">
+            <h1><span>林晨曦</span><label>上市公司HR</label></h1>
+            <p>小窗口，大服务！这里不仅能缴费，还能查询，简直太方便了！</p>
+            </div>
+        </div>
+        <div class="swiper-slide">
+            <img src="./img/code.png" class="portrait">
+            <div class="info">
+            <h1><span>徐瑾瑜</span><label>上市公司HR</label></h1>
+            <p>参保材料太多要准备了，来回跑了好几趟也办不下来。把员工保障的事交给你们，可以腾出好多时间做其他事了。</p>
+            </div>
+        </div>
+        </div>
+        <div class="button">
+        <div class="swiper-button-prev"></div>
+        <div class="swiper-button-next"></div>
+        </div>
+    </div>
+</section>
+<!-- 扫码关注 -->
+<section class="my-scan">
+        <div class="des">
+            <p>微信扫描二维码 关注易参保</p>
+            <p>社保问题，交给我们</p>
+        </div>
+        <img class="code" src="./img/qrcode.jpg">
+    </section>
+
+    <!--底部-->
+    <div class="footer">
+      <div class="footer-container">
+        <a href="/index">
+          <div class="footer-l"></div>
+        </a>
+        <div class="footer-m">
+          <dl>
+            <dt>
+              关于我们
+            </dt>
+            <dd>
+              <a href="pages/about.html" target="_blank">公司介绍</a>
+            </dd>
+            <dd>
+              <a href="pages/lawExplain.html" target="_blank">法律声明</a>
+            </dd>
+            <dd>
+              <a href="pages/contact.html" target="_blank">联系我们</a>
+            </dd>
+          </dl>
+          <dl>
+
+            <dt>
+              商务支持
+            </dt>
+            <dd>
+              <a href="pages/supplierArea.html" target="_blank">社保覆盖城市</a>
+            </dd>
+
+          </dl>
+
+        </div>
+        <div class="footer-r">
+          <div class="clearfix"></div>
+          <div class="left">
+            <p class="write">免费热线：</p>
+            <p class="hot-line">4009-988-988</p>
+            <p>周一到周五 09:00——18:30</p>
+            <button class="hide">服务邮箱：jjshebao@jjshebao.com</button>
+            <p style="margin-top:5px;">服务邮箱：service@jjshebao.com</p>
+            <p class="address">公司地址：厦门软件二期观日路18号</p>
+          </div>
+          <div class="right">
+            <img src="img/qrcode.jpg">
+          </div>
+
+
+        </div>
+      </div>
+      <div class="link">
+        <div style="margin-bottom:15px; margin-left: 60px;">
+          <ul>
+            <li>友情连接：</li>
+            <li><a type="button" href="http://www.fjshldbx.com.cn/" target="_blank" class="btn btn-link text-muted goto ">福建省社会劳动保险局</a></li>
+            <li><a type="button" href="http://www.fujian.gov.cn/" target="_blank" class="btn btn-link text-muted goto ">福建省人民政府门户网站</a></li>
+            <li><a type="button" href="http://www.fjrs.gov.cn/" target="_blank" class="btn btn-link text-muted goto ">福建省人力资源和社会保障厅</a></li>
+            <li><a type="button" href="http://www.fjylbz.gov.cn/" target="_blank" class="btn btn-link text-muted goto ">福建医疗保障</a></a></li>
+          </ul>
+        </div>
+
+        <p> 易联众民生（厦门）科技有限公司 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+          <a href="http://www.miitbeian.gov.cn" target="_blank" style="color: #999;"> 备案/许可证号：闽ICP备05020898号</a>
+        </p>
+        <div class="link-img">
+          <img src="img/trust.png">
+        </div>
+      </div>
+    </div>
+<script src="js/jquery-1.11.1.min.js"></script>
+<script src="js/bootstrap.min.js"></script>
+<script src="plugs/swiper/swiper.min.js"></script>
+<script>
+    $(function () {
+        $('#ad-carousel').carousel();
+        $('#menu-nav .navbar-collapse a').click(function (e) {
+            var href = $(this).attr('href');
+            var tabId = $(this).attr('data-tab');
+            if ('#' !== href) {
+                e.preventDefault();
+                $(document).scrollTop($(href).offset().top - 70);
+                if (tabId) {
+                    $('#feature-tab a[href=#' + tabId + ']').tab('show');
+                }
+            }
+        });
+        if (checkVersion().weixin || checkVersion().ios || checkVersion().android) {
+            dynamicLoadCss('css/style-mobile.min.css')
+            dynamicLoadJs('plugs/rem.js')
+            dynamicLoadJs('js/mobile.js')
+        } else {
+            dynamicLoadJs('js/pc.js')
+        }
+        let swiper2 = new Swiper('.swiper-banner',{
+          effect: 'fade',
+          loop: true,
+          autoplay: true,
+          pagination: {
+            el: '.swiper-pagination',
+            clickable :true
+          },
+        })
+        $(".btn-pay").hover(function(){
+            $(".ser-code-pay").addClass("ser-code-active");
+        });
+        $(".ser-code-pay").hover(function(){
+        },function(){
+            $(".ser-code-pay").removeClass("ser-code-active");
+        });
+        $(".btn-search").hover(function(){
+            $(".ser-code-search").addClass("ser-code-active");
+        });
+        $(".ser-code-search").hover(function(){
+        },function(){
+            $(".ser-code-search").removeClass("ser-code-active");
+        });
+        $(".btn-watch").hover(function(){
+            $(".ser-code-watch").addClass("ser-code-active");
+        });
+        $(".ser-code-watch").hover(function(){
+        },function(){
+            $(".ser-code-watch").removeClass("ser-code-active");
+        });
+    });
+    /**
+         * 判断当前是否为pc端
+         **/
+         let checkVersion = () => {
+        let ua = window.navigator.userAgent.toLowerCase();
+        let version = {
+            "ios": ua.indexOf("iphone") > -1,
+            "android": ua.indexOf("android") > -1 || ua.indexOf("linux") > -1,
+            "safari": ua.indexOf("iphone") > -1,
+            "alipay": ua.indexOf("alipayclient") > -1,
+            "weixin": (ua.match(/MicroMessenger/i) == 'micromessenger')
+        };
+        return version;
+        }
+        /**
+         * 动态加载css
+         **/
+        let dynamicLoadCss = url => {
+            let head = document.getElementsByTagName('head')[0];
+            let link = document.createElement('link');
+            link.type='text/css';
+            link.rel = 'stylesheet';
+            link.href = url;
+            head.appendChild(link);
+        }
+        /**
+         * 动态加载js
+         **/
+        let dynamicLoadJs = url => {
+            let head = document.getElementsByTagName('head')[0];
+            let script = document.createElement('script');
+            script.type = 'text/javascript';
+            script.src = url;
+            if(typeof(callback)=='function'){
+                script.onload = script.onreadystatechange = function () {
+                    if (!this.readyState || this.readyState === "loaded" || this.readyState === "complete"){
+                        callback();
+                        script.onload = script.onreadystatechange = null;
+                    }
+                };
+            }
+            head.appendChild(script);
+        }
+</script>
+</body>
+</html>
