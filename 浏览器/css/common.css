@@ -1,0 +1,491 @@
+body {
+    padding-top: 50px;
+    padding-bottom: 40px;
+    color: #5a5a5a;
+}
+.navbar-brand-icon{
+  width: 85px;
+  height: 30px;
+  margin-top: -5px;
+  margin-right: 10px;
+}
+/* 轮播广告 */
+.swiper-slide{
+  height: 300px !important;
+}
+.carousel {
+    height: calc(100vh - 50px);
+    margin-bottom: 60px;
+}
+
+.carousel .item {
+    height: calc(100vh - 50px);
+    background-color: #000;
+}
+
+.carousel .item img {
+    width: 100%;
+}
+
+.carousel-caption {
+    z-index: 10;
+}
+
+.carousel-caption p {
+    margin-bottom: 20px;
+    font-size: 20px;
+    line-height: 1.8;
+}
+
+/* 简介 */
+
+.summary {
+    padding-right: 15px;
+    padding-left: 15px;
+}
+
+.summary .col-md-4 {
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+/* 特性 */
+
+.feature-divider {
+    margin: 40px 0;
+}
+
+.feature {
+    padding: 30px 0;
+}
+
+.feature-heading {
+    font-size: 50px;
+    color: #2a6496;
+}
+
+.feature-heading .text-muted {
+    font-size: 28px;
+}
+/*社保流程*/
+.my-flow {
+    background: white;
+    padding: 100px 0;
+    text-align: center;
+  }
+
+  .my-flow .flow-list {
+    margin: auto;
+  }
+
+  .my-flow .flow-list .flow-item {
+    position: relative;
+    display: inline-block;
+    margin-right: 60px;
+  }
+
+  .my-flow .flow-list .flow-item img {
+    width: 239px;
+    height: 184px;
+  }
+
+  .my-flow .flow-list .flow-item p {
+    color: #666666;
+    margin-top: 40px;
+  }
+
+  .my-flow .flow-list li::before {
+    position: absolute;
+    content: ' ';
+    width: 25px;
+    height: 21px;
+    right: -45px;
+    top: 74px;
+    background: transparent url("../img/ic-arrow-right.png") center/25px 21px no-repeat;
+  }
+
+  .my-flow .flow-list .flow-item:last-child {
+    margin-right: 0;
+  }
+
+  .my-flow .flow-list .flow-item:last-child::before {
+    display: none;
+  }
+/* 响应式布局 */
+
+@media (max-width: 768px) {
+
+    .summary {
+        padding-right: 3px;
+        padding-left: 3px;
+    }
+
+    .carousel {
+        height: 300px;
+        margin-bottom: 30px;
+    }
+
+    .carousel .item {
+        height: 300px;
+    }
+
+    .carousel .item img {
+        min-height: 300px;
+    }
+
+    .carousel-caption p {
+        font-size: 16px;
+        line-height: 1.4;
+    }
+
+    .feature-heading {
+        font-size: 34px;
+    }
+
+    .feature-heading .text-muted {
+        font-size: 22px;
+    }
+}
+
+@media (min-width: 992px) {
+    .feature-heading {
+        margin-top: 35px;
+    }
+    .btn-more{
+      margin-top: 30px;
+    }
+}
+
+
+@media (min-width: 768px) {
+    .navbar-nav > li {
+        float: left;
+        margin: 0 30px;
+    }
+}
+.carousel-indicators{
+    bottom: 50px;
+}
+.carousel-caption {
+    bottom: 60px;
+}
+.banner_tabCon dl {
+    text-align: center;
+    margin: 12px 0 18px 0;
+}
+.banner_tabCon dl dt {
+    height: 35px;
+    margin: 0 auto;
+}
+.tab-li .icon-size{
+    width: 30px;
+    height: 30px;
+}
+.banner_tab {
+    width: 100%;
+    height: 90px;
+}
+.banner_tabBg {
+    width: 100%;
+    height: 90px;
+    background: #000000;
+    opacity: 0.2;
+    filter: alpha(opacity=20);
+    position: absolute;
+    left: 0;
+    bottom: 0px;
+    z-index: 3;
+}
+.banner_tabCon {
+    display: flex;
+    width: 100%;
+    height: 90px;
+    position: absolute;
+    left: 0px;
+    bottom: -22px;
+    z-index: 9;
+}
+.banner_tabCon .tab-li{
+    flex: 1;
+}
+@media screen and (min-width: 768px) {
+    .carousel-indicators {
+        bottom: 100px;
+    }
+    .carousel-caption {
+        bottom: 110px;
+    }
+    .banner_tabCon dl {
+        text-align: center;
+        margin: 19px 0 18px 0;
+    }
+    .banner_tabCon dl dt {
+        height: 48px;
+        margin: 0 auto;
+    }
+    .tab-li .icon-size{
+        width: 45px;
+        height: 45px;
+    }
+    .banner_tabCon {
+        bottom: 5px;
+    }
+}
+.navbar-nav .contact{
+    font-size: 18px;
+}
+.navbar-nav .contact .icon-tel{
+    width: 18px;
+    height: 18px;
+    margin-right: 6px;
+    margin-top: -2px;
+}
+.navbar-brand-icon{
+  width: 85px;
+  height: 30px;
+  margin-top: -5px;
+  margin-right: 10px;
+}
+.navbar-nav .contact{
+    font-size: 18px;
+}
+.navbar-nav .contact .icon-tel{
+    width: 18px;
+    height: 18px;
+    margin-right: 6px;
+    margin-top: -2px;
+}
+
+/* 回到顶部 */
+.right-bottom{
+    position: fixed;
+    top: 90%;
+    right: 0;
+    transform: translateY(-50%);
+    z-index: 99999;
+    width: 55px;
+    height: 55px;
+    background: #000000;
+    opacity: 0.2;
+    filter: alpha(opacity=20);
+    text-align: center;
+    display: none;
+}
+.totop-icon{
+    width: 40px;
+    height: 40px;
+    margin-top: 10px;
+}
+.right-bottom:hover{
+    opacity: 0.5;
+    filter: alpha(opacity=50);
+}
+.dis-block{
+    display: block;
+}
+
+  /*底部内容*/
+  .footer-container {
+    padding-top: 80px;
+    width: 1200px;
+    min-width: 1000px;
+    margin: 0 auto;
+  }
+
+  .footer {
+    background-color: #000;
+  }
+
+  .footer a:hover {
+    color: #ff6600;
+  }
+
+  .footer-container {
+    overflow: hidden;
+    margin-bottom: 90px;
+  }
+
+  .footer-l {
+    width: 160px;
+    height: 51px;
+    float: left;
+    margin: 5px 30px 0 20px;
+    background: url("../img/icon-logo_.png") 0 0 no-repeat;
+  }
+
+  .footer-m {
+    float: left;
+    overflow: hidden;
+    padding: 0 40px;
+    border-right: 1px solid #545158;
+    color: #999;
+  }
+
+  .footer-r {
+    float: left;
+    text-align: left;
+    width: 600px;
+  }
+
+  .footer-r .left {
+    width: 280px;
+    float: left;
+    padding-left: 60px;
+  }
+
+  .footer-r .right {
+    width: 280px;
+    float: left;
+    text-align: center;
+  }
+
+  .footer-m dl {
+    float: left;
+    margin-right: 90px;
+    color: #999;
+  }
+
+  .footer-m dl.last {
+    margin-right: 0;
+  }
+
+  .footer-m dl dt {
+    color: #fff;
+    display: inline-block;
+    font-size: 14px;
+  }
+
+  .footer-m dl dd {
+    padding-top: 20px;
+  }
+
+  .footer-m a {
+    font-size: 12px;
+    color: #999;
+  }
+
+  .footer-r button {
+    padding: 5px 20px;
+    color: #fff;
+    border-radius: 20px;
+    background-color: #ff6600;
+    font-size: 14px;
+    margin-bottom: 28px;
+    cursor: pointer;
+    margin-top: 20px;
+  }
+
+  .footer-r .right img {
+    width: 120px;
+    height: 120px;
+  }
+
+  .footer .hot-line {
+    margin-right: 20px;
+    font-size: 20px;
+    padding-bottom: 5px;
+  }
+
+  .footer p {
+    font-size: 12px;
+    color: #999;
+  }
+
+  .write {
+    margin-right: 90px;
+    color: #fff !important;
+    font-size: 14px !important;
+    margin-bottom: 5px;
+  }
+
+  .address {
+    padding-top: 5px;
+  }
+
+  .link {
+    width: 1200px;
+    min-width: 1000px;
+    margin: 0 auto;
+    text-align: center;
+  }
+  .link ul {
+    overflow: hidden;
+    position: relative;
+    left: 50%;
+    margin-left: -400px;
+  }
+
+  .link ul li {
+    float: left;
+    padding-right: 35px;
+  }
+
+  .link img {
+    padding-right: 12px;
+  }
+
+  .link-img {
+    padding: 20px 0 35px 0;
+  }
+
+  .link ul li a {
+    color: #999;
+  }
+/* 在线咨询 */
+.right_nav {
+    position: fixed;
+    top: 50%;
+    right: 0;
+    transform: translateY(-50%);
+    z-index: 99999;
+    display: none;
+}
+.online_service {
+    width: 64px;
+    height: 74px;
+    background: #FF5B5F;
+    border-radius: 0;
+    margin: 0 auto;
+    margin-bottom: 2px;
+    cursor: pointer;
+    position: relative;
+    text-align: center;
+}
+.online_service:hover, .phone_service:hover, .order_service:hover {
+    background-color: #F34C50;
+}
+.service_alert1 p {
+    width: 140px;
+    height: 32px;
+    background: #F5F5FA;
+    border-radius: 4px;
+    font-size: 14px;
+    color: #4A4A4A;
+    font-family: PingFangSC-Regular;
+    text-align: center;
+    margin: 0 auto;
+    line-height: 32px;
+    margin-top: 8px;
+}
+.online_service p, .phone_service p, .order_service p {
+    font-size: 12px;
+    color: #FFFFFF;
+    font-family: PingFangSC-Regular;
+    text-align: center;
+    margin: 0 auto;
+}
+.online_service img{
+    width: 35px;
+    height: 32px;
+    margin: 8px 0;
+}
+/* 下拉样式修改 */
+.dropdown:hover > .dropdown-menu{
+    display: block;
+}
+.dropdown-menu li a{
+    padding: 8px 20px;
+}
+.dropdown-menu li a:hover{
+    background-color: #F5F5FA;
+}

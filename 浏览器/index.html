@@ -5,7 +5,9 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>易参保</title>
+    <link rel="stylesheet" href="css/clearStyle.css">
     <link href="css/bootstrap.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/common.css">
     <link rel="stylesheet" href="css/newStyle.css">
     <link type="text/css" rel="stylesheet" href="plugs/swiper/swiper.min.css">
     <!--[if lt IE 9]>
@@ -26,7 +28,7 @@
                 <span class="icon-bar"></span>
                 <span class="icon-bar"></span>
             </button>
-            <a class="navbar-brand" href="#">易参保</a>
+            <a class="navbar-brand" href="#"><img class="navbar-brand-icon" src="./img/icon-logo.png"/></a>
         </div>
         <div class="navbar-collapse collapse">
             <ul class="nav navbar-nav">
@@ -47,9 +49,9 @@
                 <li class="dropdown">
                     <a href="#" class="dropdown-toggle" data-toggle="dropdown">个人服务 <span class="caret"></span></a>
                     <ul class="dropdown-menu drop-width" role="menu">
-                        <li><a href="#feature-tab" data-tab="tab-chrome">Chrome</a></li>
-                        <li><a href="#feature-tab" data-tab="tab-firefox">Firefox</a></li>
-                        <li><a href="#feature-tab" data-tab="tab-safari">Safari</a></li>
+                        <li><a href="#feature-tab" data-tab="tab-chrome" onclick="window.location='./index2.html'">社保</a></li>
+                        <li><a href="#feature-tab" data-tab="tab-firefox">综合保障</a></li>
+                        <li><a href="#feature-tab" data-tab="tab-safari">残保金</a></li>
                         <li><a href="#feature-tab" data-tab="tab-opera">Opera</a></li>
                         <li><a href="#feature-tab" data-tab="tab-ie">IE</a></li>
                     </ul>
@@ -119,8 +121,6 @@
 
                     <p>Opera浏览器，是一款挪威Opera Software ASA公司制作的支持多页面标签式浏览的网络浏览器。</p>
 
-                    <p><a class="btn btn-lg btn-primary" href="http://www.opera.com/zh-cn" target="_blank"
-                          role="button">点我下载</a></p>
                 </div>
             </div>
         </div>
@@ -133,8 +133,6 @@
 
                     <p>Internet Explorer，简称 IE，是微软公司推出的一款网页浏览器。</p>
 
-                    <p><a class="btn btn-lg btn-primary" href="http://ie.microsoft.com/" target="_blank"
-                          role="button">点我下载</a></p>
                 </div>
             </div>
         </div>
@@ -236,6 +234,28 @@
         </li>
     </ul>
 </section>
+<!-- 在线咨询 -->
+<div class="right_nav">
+    <!-- 在线咨询 -->
+    <div class="online_service">
+        <img src="https://static.cache.51shebao.com/201908131201/statics/output/images/v6_images/right_icon/message_zixun.png" alt="">
+        <p>在线咨询</p>
+        <div class="service_alert11">
+            <div class="service_alert1" style="display: none;">
+                <h4>请选择您的咨询类型</h4>
+                <p class="qiye_udesk">企业业务</p>
+                <p class="personal_udesk">个人业务</p>
+            </div>
+        </div>
+        <div class="service_alert22">
+            <div class="service_alert2" style="display: none;">
+                <span class="close_service_alert2"></span>
+                <h4>立即开始咨询</h4>
+                <p>与专业人员沟通解决方案</p>
+            </div>
+        </div>
+    </div>
+</div>
 <!-- 主要内容 -->
 <div class="container summary">
 
@@ -286,13 +306,13 @@
         <div class="tab-pane active" id="tab-chrome">
             <div class="row feature">
                 <div class="col-md-7">
-
                     <h2 class="feature-heading">社保 <span
                             class="text-muted">100%直营服务，48小时极速反馈</span></h2>
 
                     <p class="lead">业内开创100%全直营服务“京东模式”，48小时反馈时限承诺
                             14年从业经验，3万+企业客户，50万+用户
                             原创研发101HR共享服务平台，领先技术，保障客户信息安全</p>
+                    <button class="btn btn-danger btn-lg btn-more">了解更多</button>
                 </div>
                 <div class="col-md-5">
                     <img class="feature-image img-responsive" src="img/chrome-logo.jpg"
@@ -312,6 +332,7 @@
                     </h2>
 
                     <p class="lead">服务范围覆盖全国，涵盖员工门急诊，住院，生育多种需求标准化服务体系，高效理赔流程，省时，省心，省力大平台议价，性价比更高，可实时查询办理进度</p>
+                    <button class="btn btn-danger btn-lg btn-more">了解更多</button>
                 </div>
             </div>
         </div>
@@ -324,6 +345,7 @@
                     <p class="lead">专家团队，顶层设计，咨询精算，合规筹划
                             从招聘到审核减免，专家指导，一站式服务
                             全流程、标准化、系统化多维度保障，降低风险</p>
+                    <button class="btn btn-danger btn-lg btn-more">了解更多</button>
                 </div>
                 <div class="col-md-5">
                     <img class="feature-image img-responsive" src="img/safari-logo.jpg"
@@ -344,6 +366,7 @@
 
                     <p class="lead">Opera浏览器，是一款挪威Opera Software ASA公司制作的支持多页面标签式浏览的网络浏览器。
                         是跨平台浏览器可以在Windows、Mac和Linux三个操作系统平台上运行。.</p>
+                    <button class="btn btn-danger btn-lg btn-more">了解更多</button>
                 </div>
             </div>
         </div>
@@ -356,6 +379,7 @@
                     <p class="lead">Internet Explorer，原称Microsoft Internet Explorer(6版本以前)和Windows Internet
                         Explorer(7，8，9，10版本)，
                         简称IE，是美国微软公司推出的一款网页浏览器。它采用的排版引擎(俗称内核)为Trident。</p>
+                    <button class="btn btn-danger btn-lg btn-more">了解更多</button>
                 </div>
                 <div class="col-md-5">
                     <img class="feature-image img-responsive" src="img/ie-logo.jpg"
@@ -385,13 +409,6 @@
             </div>
         </div>
     </div>
-
-
-    <footer>
-        <p class="pull-right"><a href="#top">回到顶部</a></p>
-
-
-    </footer>
 
 </div>
 <!-- 合作伙伴 -->
@@ -429,82 +446,83 @@
 </section>
 <!-- 扫码关注 -->
 <section class="my-scan">
-        <div class="des">
-            <p>微信扫描二维码 关注易参保</p>
-            <p>社保问题，交给我们</p>
-        </div>
-        <img class="code" src="./img/qrcode.jpg">
-    </section>
+    <div class="des">
+        <p>微信扫描二维码 关注易参保</p>
+        <p>社保问题，交给我们</p>
+    </div>
+    <img class="code" src="./img/qrcode.jpg">
+</section>
 
-    <!--底部-->
-    <div class="footer">
-      <div class="footer-container">
+<!--底部-->
+<div class="footer">
+    <div class="footer-container">
         <a href="/index">
-          <div class="footer-l"></div>
+            <div class="footer-l"></div>
         </a>
         <div class="footer-m">
-          <dl>
+            <dl>
             <dt>
-              关于我们
+                关于我们
             </dt>
             <dd>
-              <a href="pages/about.html" target="_blank">公司介绍</a>
+                <a href="pages/about.html" target="_blank">公司介绍</a>
             </dd>
             <dd>
-              <a href="pages/lawExplain.html" target="_blank">法律声明</a>
+                <a href="pages/lawExplain.html" target="_blank">法律声明</a>
             </dd>
             <dd>
-              <a href="pages/contact.html" target="_blank">联系我们</a>
+                <a href="pages/contact.html" target="_blank">联系我们</a>
             </dd>
-          </dl>
-          <dl>
+            </dl>
+            <dl>
 
             <dt>
-              商务支持
+                商务支持
             </dt>
             <dd>
-              <a href="pages/supplierArea.html" target="_blank">社保覆盖城市</a>
+                <a href="pages/supplierArea.html" target="_blank">社保覆盖城市</a>
             </dd>
 
-          </dl>
+            </dl>
 
         </div>
         <div class="footer-r">
-          <div class="clearfix"></div>
-          <div class="left">
-            <p class="write">免费热线：</p>
-            <p class="hot-line">4009-988-988</p>
-            <p>周一到周五 09:00——18:30</p>
-            <button class="hide">服务邮箱：jjshebao@jjshebao.com</button>
-            <p style="margin-top:5px;">服务邮箱：service@jjshebao.com</p>
-            <p class="address">公司地址：厦门软件二期观日路18号</p>
-          </div>
-          <div class="right">
-            <img src="img/qrcode.jpg">
-          </div>
-
-
+            <div class="clearfix"></div>
+            <div class="left">
+                <p class="write">免费热线：</p>
+                <p class="hot-line">4009-988-988</p>
+                <p>周一到周五 09:00——18:30</p>
+                <button class="hide">服务邮箱：jjshebao@jjshebao.com</button>
+                <p style="margin-top:5px;">服务邮箱：service@jjshebao.com</p>
+                <p class="address">公司地址：厦门软件二期观日路18号</p>
+            </div>
+            <div class="right">
+                <img src="img/qrcode.jpg">
+            </div>
         </div>
-      </div>
-      <div class="link">
-        <div style="margin-bottom:15px; margin-left: 60px;">
-          <ul>
-            <li>友情连接：</li>
-            <li><a type="button" href="http://www.fjshldbx.com.cn/" target="_blank" class="btn btn-link text-muted goto ">福建省社会劳动保险局</a></li>
-            <li><a type="button" href="http://www.fujian.gov.cn/" target="_blank" class="btn btn-link text-muted goto ">福建省人民政府门户网站</a></li>
-            <li><a type="button" href="http://www.fjrs.gov.cn/" target="_blank" class="btn btn-link text-muted goto ">福建省人力资源和社会保障厅</a></li>
-            <li><a type="button" href="http://www.fjylbz.gov.cn/" target="_blank" class="btn btn-link text-muted goto ">福建医疗保障</a></a></li>
-          </ul>
+        <div class="link">
+        <div class="friend-link">
+            <ul>
+                <li>友情连接：</li>
+                <li><a type="button" href="http://www.fjshldbx.com.cn/" target="_blank" class="btn btn-link text-muted goto ">福建省社会劳动保险局</a></li>
+                <li><a type="button" href="http://www.fujian.gov.cn/" target="_blank" class="btn btn-link text-muted goto ">福建省人民政府门户网站</a></li>
+                <li><a type="button" href="http://www.fjrs.gov.cn/" target="_blank" class="btn btn-link text-muted goto ">福建省人力资源和社会保障厅</a></li>
+                <li><a type="button" href="http://www.fjylbz.gov.cn/" target="_blank" class="btn btn-link text-muted goto ">福建医疗保障</a></a></li>
+            </ul>
         </div>
 
         <p> 易联众民生（厦门）科技有限公司 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-          <a href="http://www.miitbeian.gov.cn" target="_blank" style="color: #999;"> 备案/许可证号：闽ICP备05020898号</a>
+            <a href="http://www.miitbeian.gov.cn" target="_blank" style="color: #999;"> 备案/许可证号：闽ICP备05020898号</a>
         </p>
         <div class="link-img">
-          <img src="img/trust.png">
+            <img src="img/trust.png">
         </div>
-      </div>
     </div>
+</div>
+<!-- 回到顶部 -->
+<div class="right-bottom">
+    <a href="#top" title="回到顶部"><img src="./img/icon-totop.png" class="totop-icon"></a>
+</div>
 <script src="js/jquery-1.11.1.min.js"></script>
 <script src="js/bootstrap.min.js"></script>
 <script src="plugs/swiper/swiper.min.js"></script>
@@ -558,6 +576,19 @@
         $(".ser-code-watch").hover(function(){
         },function(){
             $(".ser-code-watch").removeClass("ser-code-active");
+        });
+
+        // 回到顶部
+        let totop = $("div[class$='right-bottom']")
+        let contact = $("div[class$='right_nav']")
+        $(window).scroll(function(){
+            if($(window).scrollTop() >= 250){
+                totop.addClass('dis-block')
+                contact.addClass('dis-block')
+            } else{
+                totop.removeClass('dis-block')
+                contact.removeClass('dis-block')
+            }
         });
     });
     /**
