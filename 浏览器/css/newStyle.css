@@ -60,219 +60,178 @@
     background: #404040;
     background: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAEkAAAAXCAYAAABH92JbAAAAGXRFW…LZQRwDUVqwjuTS9q3VRB8C1OQUnM6UqdXX/IcADn0IMADs2AqDOPSutQAAAABJRU5ErkJggg==) no-repeat -42px center #666;
 }
-
-/*易参保服务*/
-.child-title{
-    margin-bottom: 25px;
-    font-size:32px;
-    font-weight:400;
-    color:#333333;
+/* 更多服务 */
+.more-service {
+  /* background: #FAFAFA; */
+  width: 1060px;
+  min-width: 1060px;
+  text-align: center;
+  padding: 20px 0;
+  margin: 0 auto;
+  box-sizing: border-box;
 }
-.swiper-child-title{
-  margin-bottom: 25px;
-  font-size:32px;
-  font-weight:400;
-  color:white;
+
+.more-service .more-ser-list {
+  width: 100%;
+  margin: 0 auto;
+  list-style: none;
+  padding: 0;
 }
-.my-service {
-    /* background: #FAFAFA; */
-    width: 100vw;
-    text-align: center;
-    padding: 20px 0;
-  }
-
-  .my-service .ser-list {
-    margin: auto;
-    list-style: none;
-    padding: 0;
-  }
-
-  .my-service .ser-list .ser-item {
-    background: white;
-    min-height: 430px;
-    border-radius: 4px;
-    box-shadow: 2px 0px 8px rgba(0, 0, 0, 0.1);
-    padding: 35px;
-    text-align: center;
-    display: inline-block;
-    margin: 10px;
-    position: relative;
-  }
-
-  .my-service .ser-list .ser-item .ser-img {
-    width: 280px;
-    height: 170px;
-    margin: auto;
-  }
-
-  .my-service .ser-list .ser-item .label {
-    font-size: 24px;
-    font-weight: 400;
-    color: #333;
-    border-bottom: 1px solid #999999;
-    margin-top: 20px;
-  }
-
-  .my-service .ser-list .ser-item .label span {
-    color: #00AAFF;
-    font-size: 30px;
-    margin-left: 24px;
-  }
-
-  .my-service .ser-list .ser-item .content {
+.more-ser-list .index_more_service_item {
+    width: 340px;
+    height: 385px;
+    background: #FFFFFF;
+    border-radius: 0;
+    margin: 0 auto;
+    margin-right: 20px;
+    padding: 0 25px;
+    background-position: center 0;
+    background-repeat: no-repeat;
+    background-image: url('https://www.51shebao.com/statics/output/images/v6_images/index/zonghe.png');
+    background-size: 340px 140px;
+    box-shadow: 0px 1px 4px 0px #dcdce9;
+}
+.index_more_service_item:nth-child(2) {
+  background-image: url('https://www.51shebao.com/statics/output/images/v6_images/index/canbaojin.png');
+}
+.index_more_service_item:last-child {
+  margin-right: 0px;
+}
+.index_more_service_item a {
+    margin: 30px auto 0;
+    text-decoration: none;
+}
+.index_more_service_item h4 {
+    font-size: 32px;
+    color: #4A4A4A;
+    font-family: PingFangSC-Regular;
     text-align: left;
-    padding: 20px 0;
-  }
-
-  .my-service .ser-list .ser-item .btn {
-    position: absolute;
-    width: 310px;
-    line-height: 50px;
-    background: #00AAFF;
-    border-radius: 4px;
-    font-size: 20px;
-    color: white;
-    bottom: 20px;
-    left: 50%;
-    transform: translateX(-50%);
-  }
-
-  .my-service .ser-list .ser-item .ser-code {
-    position: absolute;
-    background: rgba(0, 0, 0, 0.3);
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    max-height: 0;
-    overflow: hidden;
-    transition: max-height .5s;
-  }
-
-  .my-service .ser-list .ser-item .ser-code img {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    width: 200px;
-  }
-
-  .my-service .ser-list .ser-item .ser-code-watch img {
-    width: 150px;
-    z-index: 3;
-  }
-
-  .my-service .ser-list .ser-item .ser-code-active {
-    max-height: 500px;
-  }
-  @media (min-width: 992px) {
-    .my-service {
-        padding: 20px 0 35px;
-      }
-    .my-service .ser-list .ser-item {
-        margin: 0 15px;
-    }
-    .child-title{
-        margin-bottom: 75px;
-    }
-  }
-  /*合作伙伴*/
-.my-partner {
-    width: 100%;
-    text-align: center;
-    padding: 90px 0;
-    background: transparent url("../img/bg-partner.png") center/100% 100% no-repeat;
-  }
-
-  .my-partner .swiper-container {
-    width: 1000px;
-    margin: auto;
-    text-align: center;
-  }
-
-  .my-partner .child-title {
-    color: white;
-  }
-
-  .my-partner .swiper-slide {
-    display: flex;
-    background: white;
-    border-radius: 20px;
-    box-shadow: 6px 0px 10px rgba(0, 0, 0, 0.1);
-    padding: 54px 30px 61px 20px;
-    min-height: 280px;
-    width: 600px !important;
-  }
-
-  .my-partner .info {
-    flex: 1;
-    text-align: left;
-    margin-left: 47px;
-  }
-
-  .my-partner .info span {
-    font-size: 20px;
-    color: #333;
-    position: relative;
-  }
-
-  .my-partner .info span::before {
-    content: ' ';
-    background: #5F79B6;
-    width: 46px;
-    height: 4px;
-    position: absolute;
-    bottom: -10px;
-    left: 50%;
-    transform: translateX(-50%);
-  }
-
-  .my-partner .info label {
-    font-size: 14px;
-    color: #666;
+    margin: 0 auto;
+    font-family: PingFangSC-Light;
+    margin: 45px 0 76px;
+    -webkit-font-smoothing: antialiased;
     font-weight: normal;
-    margin-left: 20px;
-  }
-
-  .my-partner .info p {
-    margin-top: 44px;
-    width: 420px;
-  }
-
-  .my-partner .portrait {
-    width: 86px;
-    height: 86px;
-    border-radius: 50%;
-  }
-
-  /*扫码关注*/
-  .my-scan {
-    width: 100%;
-    height: 380px;
-    background: transparent url("../img/bg-scan.png") center/100% 100% no-repeat;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-  }
-
-  .my-scan .des {
-    margin-right: 200px;
-  }
-
-  .my-scan .des p:nth-child(1) {
-    font-size: 2rem;
-    color: #333;
-  }
-
-  .my-scan .des p:nth-child(2) {
-    color: #333;
+}
+.index_more_service_item p {
+    font-size: 15px;
+    color: #4A4A4A;
+    font-family: PingFangSC-Regular;
+    text-align: left;
+    margin: 0 auto;
+    line-height: 34px;
+}
+.button_white {
+    display: block;
+    width: 152px;
+    height: 48px;
+    line-height: 48px;
+    border-radius: 3px;
+    background-color: #FF5B5F;
+    color: #FFFFFF;
     font-size: 18px;
+    text-align: center;
+    font-family: PingFangSC-Regular;
+    border: 1px solid #FF5B5F;
+    cursor: pointer;
+    background-color: #FFFFFF;
+    color: #FF5B5F;
+    font-size: 16px;
+}
+.button_white:hover {
+  background-color: #F34C50;
+  color: #FFFFFF;
+}
+@media (min-width: 992px) {
+  .more-service {
+      padding: 80px 0 35px;
+    }
+  .more-service .more-ser-list .more-ser-item {
+      margin: 0 15px;
   }
-
-  .my-scan img {
-    width: 178px;
-    height: 178px;
+  .child-title{
+      margin-bottom: 45px;
   }
+}
+/* 高效服务 */
+.gaoxiao-server{
+  width: 100%;
+  background-color: #FBFBFF;
+  height: 510px;
+  overflow: hidden;
+}
+.index_list_item {
+  margin: 0 auto;
+  width: 1060px;
+  min-width: 1060px;
+  padding: 100px 0;
+}
+.index_list_item_title {
+  font-size: 34px;
+  color: #4A4A4A;
+  font-family: PingFangSC-Regular;
+  text-align: center;
+  margin: 0 auto;
+  font-family: PingFangSC-Light;
+  margin-bottom: 60px;
+}
+.index_jilei_item {
+  width: 265px;
+  margin: 0 auto;
+}
+.index_jilei_item .top_bg {
+  width: 88px;
+  height: 88px;
+  background: #FFFFFF;
+  border-radius: 50%;
+  margin: 0 auto;
+  box-shadow: 0px 2px 28px 0px rgba(0, 0, 66, 0.08);
+  border: 1px solid #FFFFFF;
+  position: relative;
+}
+.index_jilei_item .top_bg img {
+  width: 32px;
+  display: block;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+}
+.index_jilei_item h4 {
+  font-size: 18px;
+  color: #333333;
+  font-family: PingFangSC-Regular;
+  text-align: center;
+  margin: 0 auto;
+  margin: 43px auto 12px;
+  line-height: 30px;
+}
+.index_jilei_item p, .index_industry_item p {
+  font-size: 14px;
+  color: #9898A1;
+  font-family: PingFangSC-Regular;
+  text-align: center;
+  margin: 0 auto;
+  line-height: 25px;
+}
+.child-title{
+    /* margin-bottom: 25px; */
+    font-size:32px;
+    /* font-weight:400; */
+    color:#333333;
+    font-family: PingFangSC-Light;
+}
+@media (min-width: 992px) {
+  .my-service {
+      padding: 80px 0 35px;
+    }
+  .my-service .ser-list .ser-item {
+      margin: 0 15px;
+  }
+  .child-title{
+      margin-bottom: 45px;
+  }
+}
 
   /*联系我们*/
   .us .list {

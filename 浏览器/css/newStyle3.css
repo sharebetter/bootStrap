@@ -119,7 +119,7 @@ a {
     }
 }
 .kunrao {
-    padding-top: 80px;
+    padding: 80px 0 40px;
     box-sizing: border-box;
 }
 .kunrao h3 {
@@ -131,6 +131,7 @@ a {
     color: #333;
     text-align: center;
     margin-bottom: 7px;
+    font-weight: normal;
 }
 .kunrao span {
     display: block;
@@ -267,4 +268,347 @@ a {
 }
 .dis-block{
     display: block;
+}
+/*易参保服务*/
+.child-title{
+    /* margin-bottom: 25px; */
+    font-size:32px;
+    /* font-weight:400; */
+    color:#333333;
+    font-family: PingFangSC-Light;
+}
+.my-service {
+    /* background: #FAFAFA; */
+    width: 1200px;
+    min-width: 1200px;
+    text-align: center;
+    padding: 20px 0;
+    margin: 0 auto;
+  }
+
+  .my-service .ser-list {
+    margin: 0 auto;
+    list-style: none;
+    padding: 0;
+  }
+  .my-service .ser-list .ser-item {
+    background: white;
+    min-height: 430px;
+    border-radius: 4px;
+    box-shadow: 2px 0px 8px rgba(0, 0, 0, 0.1);
+    padding: 35px;
+    text-align: center;
+    display: inline-block;
+    margin: 10px;
+    position: relative;
+  }
+
+  .my-service .ser-list .ser-item .ser-img {
+    width: 280px;
+    height: 170px;
+    margin: auto;
+  }
+
+  .my-service .ser-list .ser-item .label {
+    font-size: 24px;
+    font-weight: 400;
+    color: #333;
+    border-bottom: 1px solid #999999;
+    margin-top: 20px;
+  }
+
+  .my-service .ser-list .ser-item .label span {
+    color: #00AAFF;
+    font-size: 30px;
+    margin-left: 24px;
+  }
+
+  .my-service .ser-list .ser-item .content {
+    text-align: left;
+    padding: 20px 0;
+  }
+
+  .my-service .ser-list .ser-item .btn {
+    position: absolute;
+    width: 310px;
+    line-height: 50px;
+    background: #00AAFF;
+    border-radius: 4px;
+    font-size: 20px;
+    color: white;
+    bottom: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+
+  .my-service .ser-list .ser-item .ser-code {
+    position: absolute;
+    background: rgba(0, 0, 0, 0.3);
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height .5s;
+  }
+
+  .my-service .ser-list .ser-item .ser-code img {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 200px;
+  }
+
+  .my-service .ser-list .ser-item .ser-code-watch img {
+    width: 150px;
+    z-index: 3;
+  }
+
+  .my-service .ser-list .ser-item .ser-code-active {
+    max-height: 500px;
+  }
+  @media (min-width: 992px) {
+    .my-service {
+        padding: 30px 0 35px;
+      }
+    .my-service .ser-list .ser-item {
+        margin: 0 15px;
+    }
+    .child-title{
+        margin-bottom: 45px;
+    }
+  }
+  /*合作伙伴*/
+  .my-partner {
+    width: 100%;
+    text-align: center;
+    padding: 90px 0;
+    background-color: #F1F3F4;
+    /* background: transparent url("../img/bg-partner.png") center/100% 100% no-repeat; */
+  }
+  .swiper-child-title{
+    margin-bottom: 25px;
+    font-size:32px;
+    font-weight:400;
+    /* color:white; */
+  }
+  .my-partner .swiper-container {
+    width: 1000px;
+    margin: auto;
+    text-align: center;
+  }
+
+  .my-partner .child-title {
+    color: white;
+  }
+
+  .my-partner .swiper-slide {
+    display: flex;
+    background: white;
+    border-radius: 20px;
+    box-shadow: 6px 0px 10px rgba(0, 0, 0, 0.1);
+    padding: 54px 30px 61px 20px;
+    min-height: 280px;
+    width: 600px !important;
+  }
+
+  .my-partner .info {
+    flex: 1;
+    text-align: left;
+    margin-left: 47px;
+  }
+
+  .my-partner .info span {
+    font-size: 20px;
+    color: #333;
+    position: relative;
+  }
+
+  .my-partner .info span::before {
+    content: ' ';
+    background: #5F79B6;
+    width: 46px;
+    height: 4px;
+    position: absolute;
+    bottom: -10px;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+
+  .my-partner .info label {
+    font-size: 14px;
+    color: #666;
+    font-weight: normal;
+    margin-left: 20px;
+  }
+
+  .my-partner .info p {
+    margin-top: 44px;
+    width: 420px;
+  }
+
+  .my-partner .portrait {
+    width: 86px;
+    height: 86px;
+    border-radius: 50%;
+  }
+/* 好社保 */
+.good-server{
+  width: 100%;
+  background-color: #FBFBFF;
+  /* height: 510px; */
+  overflow: hidden;
+}
+.index_list_item {
+  margin: 0 auto;
+  width: 1060px;
+  min-width: 1060px;
+  padding: 100px 0;
+}
+.index_list_item_title {
+  font-size: 34px;
+  color: #4A4A4A;
+  font-family: PingFangSC-Regular;
+  text-align: center;
+  margin: 0 auto;
+  font-family: PingFangSC-Light;
+  margin-bottom: 60px;
+}
+.index_jilei_list{
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    margin-top: 60px;
+}
+.index_jilei_item {
+  width: 185px;
+  margin: 0 auto;
+}
+.index_jilei_item .top_bg {
+  width: 88px;
+  height: 88px;
+  background: #FFFFFF;
+  border-radius: 50%;
+  margin: 0 auto;
+  box-shadow: 0px 2px 28px 0px rgba(0, 0, 66, 0.08);
+  border: 1px solid #FFFFFF;
+  position: relative;
+}
+.index_jilei_item .top_bg img {
+  width: 32px;
+  display: block;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+}
+.index_jilei_item h4 {
+  font-size: 18px;
+  color: #333333;
+  font-family: PingFangSC-Regular;
+  text-align: center;
+  margin: 0 auto;
+  margin: 43px auto 12px;
+  line-height: 30px;
+}
+.index_jilei_item p, .index_industry_item p {
+  font-size: 14px;
+  color: #9898A1;
+  font-family: PingFangSC-Regular;
+  text-align: center;
+  margin: 0 auto;
+  line-height: 25px;
+}
+.child-title{
+    /* margin-bottom: 25px; */
+    font-size:32px;
+    /* font-weight:400; */
+    color:#333333;
+    font-family: PingFangSC-Light;
+}
+@media (min-width: 992px) {
+  .my-service {
+      padding: 80px 0 35px;
+    }
+  .my-service .ser-list .ser-item {
+      margin: 0 15px;
+  }
+  .child-title{
+      margin-bottom: 45px;
+  }
+}
+/* 标准化服务 */
+.index_list:nth-child(2n+1) {
+    background-color: #FFFFFF;
+}
+.relation_section3 {
+    height: 502px;
+}
+.index_list {
+    width: 100%;
+    min-width: 1100px;
+    height: 500px;
+}
+.xinchou_list {
+    padding-top: 100px;
+}
+.index_list_item {
+    margin: 0 auto;
+    width: 1060px;
+    min-width: 1060px;
+    padding: 100px 0;
+}
+.index_list_item_title {
+    font-size: 34px;
+    color: #4A4A4A;
+    font-family: PingFangSC-Regular;
+    text-align: center;
+    margin: 0 auto;
+    font-family: PingFangSC-Light;
+    margin-bottom: 60px;
+}
+.index_list_item img {
+    width: 360px;
+}
+.left-info {
+    padding-top: 20px;
+    width: 600px;
+}
+.left-info li {
+    width: 300px;
+}
+.left-info li:nth-child(3), .left-info li:nth-child(4) {
+    margin-top: 60px;
+}
+.shebao_title {
+    font-size: 18px;
+    color: #4A4A4A;
+    font-family: PingFangSC-Regular;
+    text-align: left;
+    margin: 0 auto;
+    margin-bottom: 8px;
+}
+.shebao_title span {
+    display: inline-block;
+    margin-right: 15px;
+    width: 22px;
+    height: 24px;
+    position: relative;
+    top: 5px;
+    background-position: 0 0;
+    background-size: 22px 24px;
+    background-repeat: no-repeat;
+    background-image: url(https://www.51shebao.com/statics/output/images/v6_images/chanpin/shebao/small_icon1.png);
+}
+.shebao_tip {
+    font-size: 14px;
+    color: #9898A1;
+    font-family: PingFangSC-Regular;
+    text-align: left;
+    margin: 0 auto;
+    line-height: 24px;
+    margin-left: 35px;
 }
