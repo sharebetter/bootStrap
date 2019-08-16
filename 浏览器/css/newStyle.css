@@ -300,3 +300,9 @@
 .dis-block{
   display: block;
 }
+.feature .lead{
+  margin-top: 40px;
+}
+.feature .feature-heading{
+  margin-top: 40px;
+}

@@ -154,64 +154,6 @@ a {
 .tab_list li a:link, .tab_list li a:active{
     color: #FF5B5F;
 }
-/* 导航栏下拉 */
-.nav_service_list {
-    position: absolute;
-    top: 50px;
-    width: 320px;
-    height: 0;
-    background: #FFFFFF;
-    border-radius: 0;
-    margin: 0 auto;
-    box-shadow: 0px 2px 6px 0 rgba(0, 0, 66, 0.08) inset;
-    overflow: hidden;
-    transition: height .2s linear;
-}
-.nav_service_item{
-    display: flex;
-    height: 80px;
-    float: left;
-    /* width: 230px; */
-    /* text-align: center; */
-    /* justify-content: center; */
-    padding: 15px 8px;
-}
-.nav_service_item img{
-    width: 50px;
-    height: 50px;
-    margin-right: 12px;
-}
-.nav_service_item:hover {
-    background-color: #F5F5FA;
-    cursor: pointer;
-    border-radius: 6px;
-    text-decoration: none;
-}
-.nav_service_item_title {
-    color: #000;
-    font-weight: normal;
-    font-size: 16px;
-    margin-top: 3px;
-}
-.nav_service_item_title p{
-    color: #9898A1;
-    font-size: 13px;
-    margin-top: 5px;
-}
-@media (min-width: 960px) {
-    .nav_service_list {
-        width: 520px;
-    }
-    .nav_service_item{
-        width: 230px;
-    }
-    #company-sever:hover > .nav_service_list{
-        height: 380px;
-        padding: 30px 20px;
-        transition: height .5s linear;
-    }
-}
-
 /* 媒体资讯 */
 .news_out .news_inner {
     min-width: 1160px;

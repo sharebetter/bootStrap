@@ -1,0 +1,270 @@
+/* banner */
+.shebao_banner {
+    background-image: url(../img/banner.png);
+}
+.shebao_common_banner {
+    position: relative;
+    width: 100%;
+    height: 270px;
+    background-size: 100% 270px;
+    background-position: center 0;
+    background-repeat: no-repeat;
+}
+.common_center {
+    width: 100%;
+    margin: 0 auto;
+    /* min-width: 1060px; */
+    padding-top: 30px;
+}
+.banner_title {
+    font-size: 30px;
+    color: #FFFFFF;
+    font-family: PingFangSC-Regular;
+    text-align: center;
+    margin: 0 auto;
+    margin: 0 auto 22px;
+}
+.banner_info {
+    font-size: 24px;
+    color: #FFFFFF;
+    font-family: PingFangSC-Regular;
+    text-align: center;
+    margin: 0 auto;
+}
+.button_group {
+    width: 352px;
+    margin: 56px auto 0;
+    font-size: 0;
+}
+.shebao_button_left, .shebao_button_right {
+    width: 154px;
+    height: 52px;
+    line-height: 52px;
+    display: inline-block;
+}
+.shebao_button_left, .shebao_button_right {
+    width: 154px;
+    height: 52px;
+    line-height: 52px;
+    display: inline-block;
+}
+.shebao_button_left {
+    margin-right: 40px;
+}
+.shebao_button_left:hover {
+    background-color: #F34C50;
+    color: #FFFFFF;
+    text-decoration: none;
+}
+.shebao_button_right:hover {
+    background-color: #FF5B5F;
+    color: #FFFFFF;
+    border-color: #FF5B5F;
+    text-decoration: none;
+}
+.button_red {
+    display: inline-block;
+    width: 152px;
+    height: 48px;
+    line-height: 48px;
+    border-radius: 3px;
+    background-color: #FF5B5F;
+    color: #FFFFFF;
+    font-size: 18px;
+    text-align: center;
+    font-family: PingFangSC-Regular;
+    border: 1px solid #FF5B5F;
+    cursor: pointer;
+}
+.button_white2 {
+    display: inline-block;
+    width: 152px;
+    height: 48px;
+    line-height: 48px;
+    border-radius: 3px;
+    background-color: #FF5B5F;
+    font-size: 18px;
+    text-align: center;
+    font-family: PingFangSC-Regular;
+    border: 1px solid #FF5B5F;
+    cursor: pointer;
+    background: none;
+    color: #FFFFFF;
+    border-color: #FFFFFF;
+}
+
+a, button, input {
+    -webkit-tap-highlight-color: transparent;
+    -webkit-appearance: none;
+    outline: none;
+}
+a {
+    text-decoration: none;
+    color: #9898A1;
+}
+@media (min-width: 960px) {
+    .shebao_common_banner {
+        width: 100%;
+        height: 450px;
+        background-size: 100% 450px;
+        background-position: center 0;
+        background-repeat: no-repeat;
+    }
+    .common_center {
+        min-width: 1060px;
+        padding-top: 117px;
+    }
+    .banner_title {
+        font-size: 40px;
+    }
+}
+.kunrao {
+    padding-top: 80px;
+    box-sizing: border-box;
+}
+.kunrao h3 {
+    width: 100%;
+    height: 24px;
+    line-height: 24px;
+    font-size: 24px;
+    letter-spacing: 0;
+    color: #333;
+    text-align: center;
+    margin-bottom: 7px;
+}
+.kunrao span {
+    display: block;
+    width: 100%;
+    height: 15px;
+    line-height: 15px;
+    font-size: 14px;
+    font-weight: 400;
+    font-stretch: normal;
+    letter-spacing: 0;
+    color: #999;
+    text-align: center;
+    margin-bottom: 59px;
+}
+.card-wrap{
+    width: 100%;
+    height: 380px;
+    display: flex;
+}
+.card-list{
+    position: relative;
+    flex: 1;
+    margin-right: 2px;
+    height: 100%;
+    width: 100%;
+    text-align: center;
+    overflow: hidden;
+}
+.card-list:nth-child(1){
+    background: url('../img/h1.71047c8.png') 100% 100% no-repeat;
+}
+.card-list:nth-child(2){
+    background: url('https://www.haoshebao.com/static/img/h2.48b5d84.png') 100% 100% no-repeat;
+}
+.card-list:nth-child(3){
+    background: url('../img/h1.71047c8.png') 100% 100% no-repeat;
+}
+.card-list:nth-child(4){
+    background: url('https://www.haoshebao.com/static/img/h2.48b5d84.png') 100% 100% no-repeat;
+}
+.card-list:nth-child(5){
+    background: url('../img/h1.71047c8.png') 100% 100% no-repeat;
+}
+.card-list:nth-child(6){
+    background: url('https://www.haoshebao.com/static/img/h2.48b5d84.png') 100% 100% no-repeat;
+}
+.card-list:nth-child(1):hover > .overload{
+    left: 0;
+    transition: left .1s linear;
+}
+.card-list:nth-child(2):hover > .overload{
+    left: 0;
+    transition: left .1s linear;
+}
+.card-list:nth-child(3):hover > .overload{
+    left: 0;
+    transition: left .1s linear;
+}
+.card-list:nth-child(4):hover > .overload{
+    left: 0;
+    transition: left .1s linear;
+}
+.card-list:nth-child(5):hover > .overload{
+    left: 0;
+    transition: left .1s linear;
+}
+.card-list:nth-child(6):hover > .overload{
+    left: 0;
+    transition: left .1s linear;
+}
+.card-list img{
+    width: 28px;
+    height: 28px;
+    display: block;
+    margin: 120px auto 0;
+}
+.white-line{
+    width: 19px;
+    height: 1px;
+    background: #fff;
+    margin: 0 auto;
+    margin-top: 30px;
+}
+.card-list span{
+    width: 57px;
+    line-height: 25px;
+    font-weight: 400px;
+    color: #FFFFFF;
+    margin: 30px auto 0;
+    text-align: center;
+}
+.overload{
+    position: absolute;
+    top: 0;
+    left: 100%;
+    width: 100%;
+    height: 100%;
+    z-index: 3;
+    background: #000000;
+    opacity: 0.9;
+    filter: alpha(opacity=90);
+    transition: left .1s linear;
+}
+.overload p{
+    width: 100px;
+    height: 80px;
+    line-height: 25px;
+    font-size: 14px;
+    font-weight: 400;
+    font-stretch: normal;
+    letter-spacing: 0;
+    color: #fff;
+    margin: 0 auto;
+    margin-top: 147px;
+    margin-bottom: 59px;
+    text-align: center;
+}
+.overload button{
+    width: 124px;
+    height: 36px;
+    line-height: 36px;
+    border-radius: 18px;
+    border: 1px solid #fff;
+    outline: none;
+    display: block;
+    margin: 0 auto;
+    font-size: 16px;
+    font-weight: 400;
+    font-stretch: normal;
+    letter-spacing: 0;
+    color: #fff;
+    background: transparent;
+    cursor: pointer;
+}
+.dis-block{
+    display: block;
+}
