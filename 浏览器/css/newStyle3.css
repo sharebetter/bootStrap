@@ -544,7 +544,7 @@ a {
 .index_list:nth-child(2n+1) {
     background-color: #FFFFFF;
 }
-.relation_section3 {
+.server_list_section {
     height: 502px;
 }
 .index_list {
@@ -552,7 +552,7 @@ a {
     min-width: 1100px;
     height: 500px;
 }
-.xinchou_list {
+.server_list {
     padding-top: 100px;
 }
 .index_list_item {
