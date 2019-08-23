@@ -31,7 +31,7 @@
         </div>
         <div class="navbar-collapse collapse">
             <ul class="nav navbar-nav">
-                <li class="active"><a href="#ad-carousels" onclick="window.location='./index.html'">首页</a></li>
+                <li><a href="#ad-carousels" onclick="window.location='./index.html'">首页</a></li>
                 <li id="company-sever"><a href="#summary-container">企业服务<span class="caret"></span></a>
                     <div class="nav_service_list">
                         <div class="col-sm-12 col-md-6">
@@ -104,7 +104,7 @@
                 </li>
                 <li><a href="#" onclick="window.location='./news.html'">社保咨询</a></li>
                 <li><a href="#" onclick="window.location='./goodBox.html'">保叔百宝箱</a></li>
-                <li><a href="#" onclick="window.location='./aboutUs.html'">关于我们</a></li>
+                <li class="active"><a href="#" data-toggle="modal" data-target="#about-modal">关于我们</a></li>
             </ul>
             <ul class="nav navbar-nav navbar-right">
                 <li class="contact"><a href="#"><img class="icon-tel" src="./img/icon-tel.png" />4009-988-988</a></li>
@@ -112,83 +112,20 @@
         </div>
     </div>
 </div>
-
-
-<!-- 广告轮播 -->
-<div id="ad-carousels" class="carousel slide" data-ride="carousel">
-    <ol class="carousel-indicators">
-        <li data-target="#ad-carousels" data-slide-to="0" class="active"></li>
-        <li data-target="#ad-carousels" data-slide-to="1"></li>
-        <li data-target="#ad-carousels" data-slide-to="2"></li>
-        <li data-target="#ad-carousels" data-slide-to="3"></li>
-    </ol>
-    <div class="carousel-inner">
-        <div class="item active">
-            <img src="http://webstatic.51shebao.com//banner/banner_id_5d53e1a9c0ac12.67545667/20190814/15657783455953651eeb8a1b71ca019259216fe234a9a246.jpg" alt="3 slide">
-        </div>
-        <div class="item">
-            <img src="http://webstatic.51shebao.com//banner/banner_id_5d53e19e08c272.96711171/20190814/1565778334150971c85fd8da32cf146f1789f39cb8d8bd8b.jpg" alt="2 slide">
-        </div>
-        <div class="item">
-            <img src="http://webstatic.51shebao.com//banner/banner_id_5d53e1a9c0ac12.67545667/20190814/15657783455953651eeb8a1b71ca019259216fe234a9a246.jpg" alt="1 slide">
-        </div>
-        <div class="item">
-            <img src="./img/chrome-big.jpg" alt="4 slide">
-
-            <div class="container">
-                <div class="carousel-caption">
-                    <h1>Opera</h1>
-
-                    <p>Opera浏览器，是一款挪威Opera Software ASA公司制作的支持多页面标签式浏览的网络浏览器。</p>
-
-                </div>
-            </div>
-        </div>
-
-    </div>
-    <a class="left carousel-control" href="#ad-carousels" data-slide="prev"><span
-            class="glyphicon glyphicon-chevron-left"></span></a>
-    <a class="right carousel-control" href="#ad-carousels" data-slide="next"><span
-            class="glyphicon glyphicon-chevron-right"></span></a>
-    <div class="banner_tab">
-        <div class="banner_tabBg"></div>
-        <div class="banner_tabCon">
-            <a class="tab-li" href="#security">
-            <dl>
-                <dt><img class="icon-size" src="https://static.cache.51shebao.com/201907091201/statics/output/images/v5_images/she_icon.png" draggable="false"></dt>
-                <dd>社保</dd>
-            </dl>
-            </a>
-            <a class="tab-li" href="#insurance">
-            <dl>
-                <dt><img class="icon-size" src="https://static.cache.51shebao.com/201907091201/statics/output/images/v5_images/insurance_icon.png" draggable="false"></dt>
-                <dd>综合保障</dd>
-            </dl>
-            </a>
-            <a class="tab-li" href="#canbaojin">
-            <dl>
-                <dt><img class="icon-size" src="https://static.cache.51shebao.com/201907091201/statics/output/images/v5_images/canbaojin_icon.png" draggable="false"></dt>
-                <dd>残保金</dd>
-            </dl>
-            </a>
+<!-- 社保banner -->
+<div class="shebao_banner shebao_common_banner">
+    <div class="common_center">
+        <h1 class="banner_title">109个城市直营社保服务</h1>
+        <p class="banner_info">统一服务费19.9元/人·月</p>
+        <div class="button_group">
+            <a class="button_red shebao_button_left" href="https://www.101hr.com/login?reback=http://baoxian.101hr.com/" target="_blank">极速开通</a>
+            <a class="button_white2 shebao_button_right online_consult">在线咨询</a>
         </div>
     </div>
 </div>
-
-<!-- 特性 -->
-
-<!-- <hr class="feature-divider"> -->
-
-<!-- <ul class="nav nav-tabs" role="tablist" id="feature-tab">
-    <li class="active"><a href="#tab-chrome" role="tab" data-toggle="tab">社保</a></li>
-    <li><a href="#tab-firefox" role="tab" data-toggle="tab">综合保障</a></li>
-    <li><a href="#tab-safari" role="tab" data-toggle="tab">残保金</a></li>
-    <li><a href="#tab-opera" role="tab" data-toggle="tab">Opera</a></li>
-    <li><a href="#tab-ie" role="tab" data-toggle="tab">IE</a></li>
-</ul> -->
 <!-- <div class="container"> -->
-    <div class="tab-content">
-        <div class="tab-pane active" id="tab-firefox">
+    <div class="tab-content" style="margin-top: 0px">
+        <div class="tab-pane active">
             <div class="row feature">
                 <div class="pull-left">
                     <img class="feature-image img-responsive" src="https://static.cache.51shebao.com/201908131201/statics/output/images/v6_images/index/pic_xinshuibao.png"
@@ -201,11 +138,11 @@
                     <p>支持17座重点城市个税异地申报，高效管理跨区薪酬</p>
                     <p>薪资在线精准核算，减少人工操作，释放HR产能</p>
                     <p>员工自助查询薪资明细，优化体验，提升效率</p>
-                    <button class="btn btn-danger btn-lg btn-more">了解更多</button>
+                    <!-- <button class="btn btn-danger btn-lg btn-more">了解更多</button> -->
                 </div>
             </div>
         </div>
-        <div class="tab-pane active index-list" id="tab-chrome">
+        <div class="tab-pane active index-list">
             <div class="row feature">
                 <div class="pull-left">
                     <h2 class="feature-heading">社保服务 <span
@@ -214,7 +151,7 @@
                             <p>业内首创100%全直营服务“京东模式”，48小时反馈时限承诺</p>
                             <p>19.9元/人·月、100%全流程截图，全面保障用户信息安全</p>
                             <p>14年从业服务经验，3万+企业客户、100万+个人用户选择</p>
-                    <button class="btn btn-danger btn-lg btn-more">了解更多</button>
+                    <!-- <button class="btn btn-danger btn-lg btn-more">了解更多</button> -->
                 </div>
                 <div class="pull-right">
                     <img class="feature-image img-responsive" src="https://static.cache.51shebao.com/201908131201/statics/output/images/v6_images/index/pic_baoxian.png"
@@ -222,7 +159,7 @@
                 </div>
             </div>
         </div>
-        <div class="tab-pane active" id="tab-opera">
+        <div class="tab-pane active">
             <div class="row feature">
                 <div class="pull-left">
                     <img class="feature-image img-responsive" src="https://static.cache.51shebao.com/201908131201/statics/output/images/v6_images/index/pic_jiesuan.png"
@@ -236,7 +173,7 @@
                     <p>多种结算模式，新经济/新业态企业首选</p>
                     <p>综合费率最优组合方案，解决企业成本难题</p>
                     <p>结算场景灵活多样，满足更多人群需求</p>
-                    <button class="btn btn-danger btn-lg btn-more">了解更多</button>
+                    <!-- <button class="btn btn-danger btn-lg btn-more">了解更多</button> -->
                 </div>
             </div>
         </div>
@@ -249,7 +186,7 @@
                     <p>社保代理、薪资代发、个税申报一体化SSC服务</p>
                     <p>数据自动采集、处理、申报，全流程在线服务，便捷高效</p>
                     <p>社保政策实时更新/提醒，全时段查询服务，规避断缴风险</p>
-                    <button class="btn btn-danger btn-lg btn-more">了解更多</button>
+                    <!-- <button class="btn btn-danger btn-lg btn-more">了解更多</button> -->
                 </div>
                 <div class="pull-right">
                     <img class="feature-image img-responsive" src="https://static.cache.51shebao.com/201908131201/statics/output/images/v6_images/index/pic_xinshuibao.png"
@@ -286,69 +223,6 @@
         </li>
     </ul>
 </section>
-<!-- 高效服务 -->
-<div class="gaoxiao-server">
-    <section class="index_list_item">
-        <h4 class="index_list_item_title">14年匠心积累 专业、系统、高效化服务</h4>
-        <ul class="index_jilei_list clearFix">
-            <li class="fl index_jilei_item">
-                <div class="top_bg">
-                    <img class="fl" src="https://static.cache.51shebao.com/201908131201/statics/output/images/v6_images/index/jilei1.png" alt="">
-                </div>
-                <h4>黄金十项服务标准</h4>
-                <p>业内首套以客户为中心的服务标准</p>
-                <p>113响应机制+NPS值评估</p>
-            </li>
-            <li class="fl index_jilei_item">
-                <div class="top_bg">
-                    <img class="fl" src="https://static.cache.51shebao.com/201908131201/statics/output/images/v6_images/index/jilei2.png" alt="">
-                </div>
-                <h4>109座直营服务城市</h4>
-                <p>首创全直营“京东模式”</p>
-                <p>服务+结果双重查验保障</p>
-            </li>
-            <li class="fl index_jilei_item">
-                <div class="top_bg">
-                    <img class="fl" src="https://static.cache.51shebao.com/201908131201/statics/output/images/v6_images/index/jilei3.png" alt="">
-                </div>
-                <h4>极致稳定共享云服务</h4>
-                <p>自动机器人秒级并发处理</p>
-                <p>全流程在线服务</p>
-            </li>
-            <li class="fl index_jilei_item">
-                <div class="top_bg">
-                    <img class="fl" src="https://static.cache.51shebao.com/201908131201/statics/output/images/v6_images/index/jilei4.png" alt="">
-                </div>
-                <h4>专业与技术双重保障</h4>
-                <p>研究中心提供政策支持</p>
-                <p>ISO27001信息安全认证</p>
-            </li>
-
-        </ul>
-    </section>
-</div>
-<!-- 社保代缴服务流程 -->
-<section class="my-flow">
-    <p class="child-title">社保代缴服务流程</p>
-    <ul class="flow-list">
-        <li class="flow-item">
-        <img src="./img/flow01.png">
-        <p>关注微信号或扫描使用小程序</p>
-        </li>
-        <li class="flow-item">
-        <img src="./img/flow02.png">
-        <p>提交参保信息并在线支付</p>
-        </li>
-        <li class="flow-item">
-        <img src="./img/flow03.png">
-        <p>使用公众号实时查看缴费情况</p>
-        </li>
-        <li class="flow-item">
-        <img src="./img/flow04.png">
-        <p>1-2月后可在公众号查询参保明细</p>
-        </li>
-    </ul>
-</section>
 <!-- 在线咨询 -->
 <div class="right_nav">
     <!-- 在线咨询 -->
@@ -359,60 +233,6 @@
         </div>
     </a>
 </div>
-<!-- 主要内容 -->
-<!-- <div class="container summary">
-    <div class="row" id="summary-container">
-        <div class="col-md-4">
-            <img class="img-circle" src="img/chrome-logo-small.jpg" alt="chrome">
-
-            <h2>Chrome</h2>
-
-            <p>Google Chrome，又称Google浏览器，是一个由Google（谷歌）公司开发的网页浏览器。</p>
-
-            <p><a class="btn btn-default" href="#" role="button">点我下载</a></p>
-        </div>
-        <div class="col-md-4">
-            <img class="img-circle" src="img/firefox-logo-small.jpg" alt="firefox">
-
-            <h2>Firefox</h2>
-
-            <p>Mozilla Firefox，中文名通常称为“火狐”或“火狐浏览器”，是一个开源网页浏览器。</p>
-
-            <p><a class="btn btn-default" href="#" role="button">点我下载</a></p>
-        </div>
-        <div class="col-md-4">
-            <img class="img-circle" src="img/safari-logo-small.jpg" alt="safari">
-
-            <h2>Safari</h2>
-
-            <p>Safari，是苹果计算机的最新操作系统Mac OS X中的浏览器。</p>
-
-            <p><a class="btn btn-default" href="#" role="button">点我下载</a></p>
-        </div>
-    </div>
-
-    <div class="modal fade" id="about-modal" tabindex="-1" role="dialog" aria-labelledby="modal-label"
-         aria-hidden="true">
-        <div class="modal-dialog">
-            <div class="modal-content">
-                <div class="modal-header">
-                    <button type="button" class="close" data-dismiss="modal"><span
-                            aria-hidden="true">&times;</span><span class="sr-only">关闭</span></button>
-                    <h4 class="modal-title" id="modal-label">关于</h4>
-                </div>
-                <div class="modal-body">
-                    <p>慕课网隶属于北京慕课科技中心(有限合伙)，是一家从事互联网免费教学的网络教育公司。秉承“开拓、创新、公平、分享”的精神，
-                        将互联网特性全面的应用在教育领域，致力于为教育机构及求学者打造一站式互动在线教育品牌。</p>
-                </div>
-                <div class="modal-footer">
-                    <button type="button" class="btn btn-default" data-dismiss="modal">了解了</button>
-                </div>
-            </div>
-        </div>
-    </div>
-
-</div> -->
-
 <!-- 扫码关注 -->
 <section class="my-scan">
     <div class="des">
@@ -421,43 +241,7 @@
     </div>
     <img class="code" src="./img/qrcode.jpg">
 </section>
-<!-- 用户注册 -->
-<div id="user_register">
-    <div class="register_content">
-        <h4 class="register_title">一步注册，资料包免费送</h4>
-        <form class="form_box" id="step_experise" onsubmit="return formValidate()">
-            <ul class="register_list">
-                <li>
-                    <span class="icon"></span>
-                    <input class="borRadius2" required type="text" name="name" value="" maxlength="20" id="input_name" placeholder="您的姓名">
-                    <em class="iIcon">*</em>
-                </li>
-                <li>
-                    <span class="icon icon2"></span>
-                    <input class="borRadius2" required type="text" name="phone" value="" id="input_phone" placeholder="您的联系方式">
-                    <em class="iIcon">*</em>
-                </li>
-                <li>
-                    <span class="icon icon3"></span>
-                    <input class="borRadius2 form-control" required type="email" maxlength="" id="input_email" name="email" value="" placeholder="您的邮箱">
-                    <em class="iIcon">*</em>
-                </li>
-                <li>
-                    <span class="icon icon4"></span>
-                    <input class="borRadius2" type="text" maxlength="" id="company_name" name="company" value="" placeholder="企业名称">
-                </li>
-            </ul>
-            <button type="submit" class="form_submit register_list_submit submit_red">提交</button>
-        </form>
-    </div>
-</div>
-<!-- 注册信息提示模态框 -->
-<div class="message_mask no_mask" id="alert-message">
-    <div id="dilog" class="succ_sign fail_sign">
-        <span id="dilog_tit">提交成功</span>
-        <span id="dilog_cont">请确认手机号格式</span>
-    </div>
-</div>
+
 <!--底部-->
 <div class="footer">
     <div class="footer-container">

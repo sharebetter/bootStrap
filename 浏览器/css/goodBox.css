@@ -1,0 +1,129 @@
+/* 更多服务 */
+.good-box {
+    /* background: #FAFAFA; */
+    width: 1160px;
+    min-width: 1160px;
+    text-align: center;
+    padding: 20px 0;
+    margin: 0 auto;
+    box-sizing: border-box;
+  }
+  .good-box .child-title{
+        /* margin-bottom: 25px; */
+        font-size:32px;
+        /* font-weight:400; */
+        color:#333333;
+        font-family: PingFangSC-Light;
+    }
+  .good-box .more-ser-list {
+    width: 100%;
+    margin: 0 auto;
+    list-style: none;
+    padding: 0;
+    display: flex;
+  }
+  .more-ser-list .index_more_service_item {
+      position: relative;
+      width: 340px;
+      height: 385px;
+      background: #FFFFFF;
+      border-radius: 0;
+      margin: 0px auto;
+      margin-right: 40px;
+      padding: 0 25px;
+      background-position: center 0;
+      background-repeat: no-repeat;
+      background-image: url('https://www.51shebao.com/statics/output/images/v6_images/index/zonghe.png');
+      background-size: 340px 140px;
+      box-shadow: 0px 1px 4px 0px #dcdce9;
+  }
+  .more-ser-list:nth-child(2) > .index_more_service_item, .more-ser-list:nth-child(3) > .index_more_service_item{
+    margin-bottom: 55px;
+  }
+  .index_more_service_item:nth-child(2) {
+    background-image: url('https://www.51shebao.com/statics/output/images/v6_images/index/canbaojin.png');
+  }
+  .index_more_service_item:last-child {
+    margin-right: 0px;
+  }
+  .index_more_service_item a {
+      margin: 30px auto 0;
+      text-decoration: none;
+  }
+  .index_more_service_item h4 {
+      font-size: 32px;
+      color: #4A4A4A;
+      font-family: PingFangSC-Regular;
+      text-align: left;
+      margin: 0 auto;
+      font-family: PingFangSC-Light;
+      margin: 45px 0 76px;
+      -webkit-font-smoothing: antialiased;
+      font-weight: normal;
+  }
+  .index_more_service_item p {
+      font-size: 15px;
+      color: #4A4A4A;
+      font-family: PingFangSC-Regular;
+      text-align: left;
+      margin: 0 auto;
+      line-height: 34px;
+  }
+  .button_white {
+      display: block;
+      width: 152px;
+      height: 48px;
+      line-height: 48px;
+      border-radius: 3px;
+      background-color: #FF5B5F;
+      color: #FFFFFF;
+      font-size: 18px;
+      text-align: center;
+      font-family: PingFangSC-Regular;
+      border: 1px solid #FF5B5F;
+      cursor: pointer;
+      background-color: #FFFFFF;
+      color: #FF5B5F;
+      font-size: 16px;
+      z-index: 9;
+  }
+  .button_white:hover {
+    background-color: #F34C50;
+    color: #FFFFFF;
+  }
+  @media (min-width: 992px) {
+    .good-box {
+        padding: 80px 0 35px;
+      }
+    .good-box .more-ser-list .more-ser-item {
+        margin: 0 15px;
+    }
+    .child-title{
+        margin-bottom: 45px;
+    }
+  }
+  .index_more_service_item .ser-code {
+    position: absolute;
+    background: rgba(0, 0, 0, 0.3);
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    width: 100%;
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height .5s;
+  }
+  .index_more_service_item .ser-code img {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 200px;
+  }
+  .index_more_service_item:hover > .ser-code{
+    max-height: 500px;
+  }
+  .dis-block{
+    display: block;
+  }

@@ -264,3 +264,9 @@ a {
 .dis-block{
     display: block;
 }
+.news_ul{
+    display: none;
+}
+.col-red{
+    color: red !important;
+}

@@ -457,7 +457,7 @@ a {
 /* 好社保 */
 .good-server{
   width: 100%;
-  background-color: #FBFBFF;
+  /* background-color: #FBFBFF; */
   /* height: 510px; */
   overflow: hidden;
 }
@@ -541,8 +541,14 @@ a {
   }
 }
 /* 标准化服务 */
+.stander-server{
+  width: 100%;
+  background-color: #FBFBFF;
+  /* height: 510px; */
+  overflow: hidden;
+}
 .index_list:nth-child(2n+1) {
-    background-color: #FFFFFF;
+  background-color: #FBFBFF;
 }
 .server_list_section {
     height: 502px;
@@ -583,6 +589,21 @@ a {
 .left-info li:nth-child(3), .left-info li:nth-child(4) {
     margin-top: 60px;
 }
+.left-info-all {
+  padding-top: 20px;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  padding-left: 30px;
+}
+.left-info-all li{
+  flex: 1;
+  text-align: center;
+  height: 90px;
+}
+/* .left-info-all li:nth-child(5), .left-info-all li:nth-child(6) {
+  margin-top: 60px;
+} */
 .shebao_title {
     font-size: 18px;
     color: #4A4A4A;

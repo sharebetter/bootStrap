@@ -26,18 +26,18 @@
         </div>
         <div class="navbar-collapse collapse">
             <ul class="nav navbar-nav">
-                <li class="active"><a href="#ad-carousel">首页</a></li>
-                <li id="company-sever"><a href="#summary-container">企业服务<span class="caret"></span></a>
+                <li><a href="#ad-carousel" onclick="window.location='./index.html'">首页</a></li>
+                <li class="active" id="company-sever"><a href="#summary-container">企业服务<span class="caret"></span></a>
                     <div class="nav_service_list">
                         <div class="col-sm-12 col-md-6">
-                            <a class="nav_service_item" href="#" onclick="window.location='./index2.html'">
+                            <a class="nav_service_item" href="#" onclick="window.location='./comService.html'">
                                 <img src="https://static.cache.51shebao.com/201908131201/statics/output/images/v6_images/index/social_security.png" alt="">
                                 <div class="nav_service_item_title">社保服务<p>全国109城直营网点</p>
                                 </div>
                             </a>
                         </div>
                         <div class="col-sm-12 col-md-6">
-                            <a class="nav_service_item" href="#" onclick="window.location='./index2.html'">
+                            <a class="nav_service_item" href="#" onclick="window.location='./comService.html'">
                                 <img src="https://static.cache.51shebao.com/201908131201/statics/output/images/v6_images/index/canbaojing.png" alt="">
                                 <div class="nav_service_item_title">残保金<p>残保金一站式解决方案</p>
                                 </div>
@@ -45,14 +45,14 @@
                             </a>
                         </div>
                         <div class="col-sm-12 col-md-6">
-                            <a class="nav_service_item" href="#" onclick="window.location='./index2.html'">
+                            <a class="nav_service_item" href="#" onclick="window.location='./comService.html'">
                                 <img src="https://static.cache.51shebao.com/201908131201/statics/output/images/v6_images/index/salary_services.png" alt="">
                                 <div class="nav_service_item_title">薪酬服务<p>统一服务费10元/人次起</p>
                                 </div>
                             </a>
                         </div>
                         <div class="col-sm-12 col-md-6">
-                            <a class="nav_service_item" href="#" onclick="window.location='./index2.html'">
+                            <a class="nav_service_item" href="#" onclick="window.location='./comService.html'">
                                 <img src="https://static.cache.51shebao.com/201908131201/statics/output/images/v6_images/index/all_ensure.png" alt="">
                                 <div class="nav_service_item_title">综合保障
                                     <p>补充医疗/补充工伤</p>
@@ -61,7 +61,7 @@
                             </a>
                         </div>
                         <div class="col-sm-12 col-md-6">
-                            <a class="nav_service_item" href="#" onclick="window.location='./index2.html'">
+                            <a class="nav_service_item" href="#" onclick="window.location='./comService.html'">
                                 <img src="https://static.cache.51shebao.com/201908131201/statics/output/images/v6_images/index/xinshuibao.png" alt="">
                                 <div class="nav_service_item_title">薪税保<sup>®</sup>
                                     <p>人资综合代理服务</p>
@@ -70,7 +70,7 @@
                             </a>
                         </div>
                         <div class="col-sm-12 col-md-6">
-                            <a class="nav_service_item" href="#" onclick="window.location='./index2.html'">
+                            <a class="nav_service_item" href="#" onclick="window.location='./comService.html'">
                                 <img src="https://static.cache.51shebao.com/201908131201/statics/output/images/v6_images/index/relation.png" alt="">
                                 <div class="nav_service_item_title">用工关系解决方案
                                     <p>激活企业用工自主权</p>
@@ -79,7 +79,7 @@
                             </a>
                         </div>
                         <div class="col-sm-12 col-md-6">
-                            <a class="nav_service_item" href="#" onclick="window.location='./index2.html'">
+                            <a class="nav_service_item" href="#" onclick="window.location='./comService.html'">
                                 <img src="https://static.cache.51shebao.com/201908131201/statics/output/images/v6_images/index/income_all.png" alt="">
                                 <div class="nav_service_item_title">收入结算<p>共享经济收入结算</p>
                                 </div>
@@ -90,14 +90,16 @@
                 <li class="dropdown">
                     <a href="#" class="dropdown-toggle" data-toggle="dropdown">个人服务 <span class="caret"></span></a>
                     <ul class="dropdown-menu drop-width" role="menu">
-                        <li><a href="#feature-tab" data-tab="tab-chrome" onclick="window.location='./pages/index2.html'">社保</a></li>
+                        <li><a href="#feature-tab" data-tab="tab-chrome" onclick="window.location='./perService.html'">社保</a></li>
                         <li><a href="#feature-tab" data-tab="tab-firefox">综合保障</a></li>
                         <li><a href="#feature-tab" data-tab="tab-safari">残保金</a></li>
                         <li><a href="#feature-tab" data-tab="tab-opera">Opera</a></li>
                         <li><a href="#feature-tab" data-tab="tab-ie">IE</a></li>
                     </ul>
                 </li>
-                <li><a href="#" data-toggle="modal" data-target="#about-modal">关于我们</a></li>
+                <li><a href="#" onclick="window.location='./news.html'">社保咨询</a></li>
+                <li><a href="#" onclick="window.location='./goodBox.html'">保叔百宝箱</a></li>
+                <li><a href="#" onclick="window.location='./aboutUs.html'">关于我们</a></li>
             </ul>
             <ul class="nav navbar-nav navbar-right">
                 <li class="contact"><a href="#"><img class="icon-tel" src="./img/icon-tel.png" />4009-988-988</a></li>
@@ -119,27 +121,15 @@
 <!-- 在线咨询 -->
 <div class="right_nav">
     <!-- 在线咨询 -->
-    <div class="online_service">
-        <img src="https://static.cache.51shebao.com/201908131201/statics/output/images/v6_images/right_icon/message_zixun.png" alt="">
-        <p>在线咨询</p>
-        <div class="service_alert11">
-            <div class="service_alert1" style="display: none;">
-                <h4>请选择您的咨询类型</h4>
-                <p class="qiye_udesk">企业业务</p>
-                <p class="personal_udesk">个人业务</p>
-            </div>
+    <a href="#user_register">
+        <div class="online_service">
+            <img src="https://static.cache.51shebao.com/201908131201/statics/output/images/v6_images/right_icon/message_zixun.png" alt="">
+            <p>联系我们</p>
         </div>
-        <div class="service_alert22">
-            <div class="service_alert2" style="display: none;">
-                <span class="close_service_alert2"></span>
-                <h4>立即开始咨询</h4>
-                <p>与专业人员沟通解决方案</p>
-            </div>
-        </div>
-    </div>
+    </a>
 </div>
 <!-- 卡片 -->
-<div class="container">
+<!-- <div class="container">
     <div class="kunrao">
         <h3>您的困扰，好社保为您解决</h3>
         <span >社保六大问题，一键咨询，让您的生活更有保障</span>
@@ -148,7 +138,6 @@
                 <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADwAAAA8CAYAAAA6/NlyAAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAAyhpVFh0WE1MOmNvbS5hZG9iZS54bXAAAAAAADw/eHBhY2tldCBiZWdpbj0i77u/IiBpZD0iVzVNME1wQ2VoaUh6cmVTek5UY3prYzlkIj8+IDx4OnhtcG1ldGEgeG1sbnM6eD0iYWRvYmU6bnM6bWV0YS8iIHg6eG1wdGs9IkFkb2JlIFhNUCBDb3JlIDUuNi1jMTM4IDc5LjE1OTgyNCwgMjAxNi8wOS8xNC0wMTowOTowMSAgICAgICAgIj4gPHJkZjpSREYgeG1sbnM6cmRmPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5LzAyLzIyLXJkZi1zeW50YXgtbnMjIj4gPHJkZjpEZXNjcmlwdGlvbiByZGY6YWJvdXQ9IiIgeG1sbnM6eG1wPSJodHRwOi8vbnMuYWRvYmUuY29tL3hhcC8xLjAvIiB4bWxuczp4bXBNTT0iaHR0cDovL25zLmFkb2JlLmNvbS94YXAvMS4wL21tLyIgeG1sbnM6c3RSZWY9Imh0dHA6Ly9ucy5hZG9iZS5jb20veGFwLzEuMC9zVHlwZS9SZXNvdXJjZVJlZiMiIHhtcDpDcmVhdG9yVG9vbD0iQWRvYmUgUGhvdG9zaG9wIENDIDIwMTcgKE1hY2ludG9zaCkiIHhtcE1NOkluc3RhbmNlSUQ9InhtcC5paWQ6MzA5MDg2NTg5QzIwMTFFODg0QjdCRkI4M0Y0Nzg4MjYiIHhtcE1NOkRvY3VtZW50SUQ9InhtcC5kaWQ6MzJFQjgzRjg5QzIwMTFFODg0QjdCRkI4M0Y0Nzg4MjYiPiA8eG1wTU06RGVyaXZlZEZyb20gc3RSZWY6aW5zdGFuY2VJRD0ieG1wLmlpZDozMDkwODY1NjlDMjAxMUU4ODRCN0JGQjgzRjQ3ODgyNiIgc3RSZWY6ZG9jdW1lbnRJRD0ieG1wLmRpZDozMDkwODY1NzlDMjAxMUU4ODRCN0JGQjgzRjQ3ODgyNiIvPiA8L3JkZjpEZXNjcmlwdGlvbj4gPC9yZGY6UkRGPiA8L3g6eG1wbWV0YT4gPD94cGFja2V0IGVuZD0iciI/Ph4qDJMAAAcISURBVHja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" alt="" srcset="">
                 <div class="white-line"></div>
                 <span>看病买药有报销</span>
-                <!-- 遮罩 -->
                 <div class="overload">
                     <p>看病就医及时报，生活更有保障</p>
                     <button>立即咨询</button>
@@ -158,7 +147,6 @@
                 <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADwAAAA8CAYAAAA6/NlyAAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAAyhpVFh0WE1MOmNvbS5hZG9iZS54bXAAAAAAADw/eHBhY2tldCBiZWdpbj0i77u/IiBpZD0iVzVNME1wQ2VoaUh6cmVTek5UY3prYzlkIj8+IDx4OnhtcG1ldGEgeG1sbnM6eD0iYWRvYmU6bnM6bWV0YS8iIHg6eG1wdGs9IkFkb2JlIFhNUCBDb3JlIDUuNi1jMTM4IDc5LjE1OTgyNCwgMjAxNi8wOS8xNC0wMTowOTowMSAgICAgICAgIj4gPHJkZjpSREYgeG1sbnM6cmRmPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5LzAyLzIyLXJkZi1zeW50YXgtbnMjIj4gPHJkZjpEZXNjcmlwdGlvbiByZGY6YWJvdXQ9IiIgeG1sbnM6eG1wPSJodHRwOi8vbnMuYWRvYmUuY29tL3hhcC8xLjAvIiB4bWxuczp4bXBNTT0iaHR0cDovL25zLmFkb2JlLmNvbS94YXAvMS4wL21tLyIgeG1sbnM6c3RSZWY9Imh0dHA6Ly9ucy5hZG9iZS5jb20veGFwLzEuMC9zVHlwZS9SZXNvdXJjZVJlZiMiIHhtcDpDcmVhdG9yVG9vbD0iQWRvYmUgUGhvdG9zaG9wIENDIDIwMTcgKE1hY2ludG9zaCkiIHhtcE1NOkluc3RhbmNlSUQ9InhtcC5paWQ6MzA5MDg2NTg5QzIwMTFFODg0QjdCRkI4M0Y0Nzg4MjYiIHhtcE1NOkRvY3VtZW50SUQ9InhtcC5kaWQ6MzJFQjgzRjg5QzIwMTFFODg0QjdCRkI4M0Y0Nzg4MjYiPiA8eG1wTU06RGVyaXZlZEZyb20gc3RSZWY6aW5zdGFuY2VJRD0ieG1wLmlpZDozMDkwODY1NjlDMjAxMUU4ODRCN0JGQjgzRjQ3ODgyNiIgc3RSZWY6ZG9jdW1lbnRJRD0ieG1wLmRpZDozMDkwODY1NzlDMjAxMUU4ODRCN0JGQjgzRjQ3ODgyNiIvPiA8L3JkZjpEZXNjcmlwdGlvbj4gPC9yZGY6UkRGPiA8L3g6eG1wbWV0YT4gPD94cGFja2V0IGVuZD0iciI/Ph4qDJMAAAcISURBVHja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" alt="" srcset="">
                 <div class="white-line"></div>
                 <span>看病买药有报销</span>
-                <!-- 遮罩 -->
                 <div class="overload">
                     <p>看病就医及时报，生活更有保障</p>
                     <button>立即咨询</button>
@@ -168,7 +156,6 @@
                 <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADwAAAA8CAYAAAA6/NlyAAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAAyhpVFh0WE1MOmNvbS5hZG9iZS54bXAAAAAAADw/eHBhY2tldCBiZWdpbj0i77u/IiBpZD0iVzVNME1wQ2VoaUh6cmVTek5UY3prYzlkIj8+IDx4OnhtcG1ldGEgeG1sbnM6eD0iYWRvYmU6bnM6bWV0YS8iIHg6eG1wdGs9IkFkb2JlIFhNUCBDb3JlIDUuNi1jMTM4IDc5LjE1OTgyNCwgMjAxNi8wOS8xNC0wMTowOTowMSAgICAgICAgIj4gPHJkZjpSREYgeG1sbnM6cmRmPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5LzAyLzIyLXJkZi1zeW50YXgtbnMjIj4gPHJkZjpEZXNjcmlwdGlvbiByZGY6YWJvdXQ9IiIgeG1sbnM6eG1wPSJodHRwOi8vbnMuYWRvYmUuY29tL3hhcC8xLjAvIiB4bWxuczp4bXBNTT0iaHR0cDovL25zLmFkb2JlLmNvbS94YXAvMS4wL21tLyIgeG1sbnM6c3RSZWY9Imh0dHA6Ly9ucy5hZG9iZS5jb20veGFwLzEuMC9zVHlwZS9SZXNvdXJjZVJlZiMiIHhtcDpDcmVhdG9yVG9vbD0iQWRvYmUgUGhvdG9zaG9wIENDIDIwMTcgKE1hY2ludG9zaCkiIHhtcE1NOkluc3RhbmNlSUQ9InhtcC5paWQ6MzA5MDg2NTg5QzIwMTFFODg0QjdCRkI4M0Y0Nzg4MjYiIHhtcE1NOkRvY3VtZW50SUQ9InhtcC5kaWQ6MzJFQjgzRjg5QzIwMTFFODg0QjdCRkI4M0Y0Nzg4MjYiPiA8eG1wTU06RGVyaXZlZEZyb20gc3RSZWY6aW5zdGFuY2VJRD0ieG1wLmlpZDozMDkwODY1NjlDMjAxMUU4ODRCN0JGQjgzRjQ3ODgyNiIgc3RSZWY6ZG9jdW1lbnRJRD0ieG1wLmRpZDozMDkwODY1NzlDMjAxMUU4ODRCN0JGQjgzRjQ3ODgyNiIvPiA8L3JkZjpEZXNjcmlwdGlvbj4gPC9yZGY6UkRGPiA8L3g6eG1wbWV0YT4gPD94cGFja2V0IGVuZD0iciI/Ph4qDJMAAAcISURBVHja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" alt="" srcset="">
                 <div class="white-line"></div>
                 <span>看病买药有报销</span>
-                <!-- 遮罩 -->
                 <div class="overload">
                     <p>全国多数主要城市买房、申请公租房，购车摇车牌，需连续缴纳社保且不能断缴</p>
                     <button>立即咨询</button>
@@ -178,7 +165,6 @@
                 <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADwAAAA8CAYAAAA6/NlyAAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAAyhpVFh0WE1MOmNvbS5hZG9iZS54bXAAAAAAADw/eHBhY2tldCBiZWdpbj0i77u/IiBpZD0iVzVNME1wQ2VoaUh6cmVTek5UY3prYzlkIj8+IDx4OnhtcG1ldGEgeG1sbnM6eD0iYWRvYmU6bnM6bWV0YS8iIHg6eG1wdGs9IkFkb2JlIFhNUCBDb3JlIDUuNi1jMTM4IDc5LjE1OTgyNCwgMjAxNi8wOS8xNC0wMTowOTowMSAgICAgICAgIj4gPHJkZjpSREYgeG1sbnM6cmRmPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5LzAyLzIyLXJkZi1zeW50YXgtbnMjIj4gPHJkZjpEZXNjcmlwdGlvbiByZGY6YWJvdXQ9IiIgeG1sbnM6eG1wPSJodHRwOi8vbnMuYWRvYmUuY29tL3hhcC8xLjAvIiB4bWxuczp4bXBNTT0iaHR0cDovL25zLmFkb2JlLmNvbS94YXAvMS4wL21tLyIgeG1sbnM6c3RSZWY9Imh0dHA6Ly9ucy5hZG9iZS5jb20veGFwLzEuMC9zVHlwZS9SZXNvdXJjZVJlZiMiIHhtcDpDcmVhdG9yVG9vbD0iQWRvYmUgUGhvdG9zaG9wIENDIDIwMTcgKE1hY2ludG9zaCkiIHhtcE1NOkluc3RhbmNlSUQ9InhtcC5paWQ6MzA5MDg2NTg5QzIwMTFFODg0QjdCRkI4M0Y0Nzg4MjYiIHhtcE1NOkRvY3VtZW50SUQ9InhtcC5kaWQ6MzJFQjgzRjg5QzIwMTFFODg0QjdCRkI4M0Y0Nzg4MjYiPiA8eG1wTU06RGVyaXZlZEZyb20gc3RSZWY6aW5zdGFuY2VJRD0ieG1wLmlpZDozMDkwODY1NjlDMjAxMUU4ODRCN0JGQjgzRjQ3ODgyNiIgc3RSZWY6ZG9jdW1lbnRJRD0ieG1wLmRpZDozMDkwODY1NzlDMjAxMUU4ODRCN0JGQjgzRjQ3ODgyNiIvPiA8L3JkZjpEZXNjcmlwdGlvbj4gPC9yZGY6UkRGPiA8L3g6eG1wbWV0YT4gPD94cGFja2V0IGVuZD0iciI/Ph4qDJMAAAcISURBVHja5JsNaJVVGMd3t7svnZtrOpdZ6ja/P8JskZEV6EoarshQaxQZFFIGi0oCk2VRotGHRNkXgxIyjT7IMgqj0FJmZlLSpg6XRrYtN/ft3Hbv7Xng/8LT6X3fe96vuysd+LF3977vOed/znPOe85znhuKxWIp/6eUOgxlZovr9EQXHg44/3HE1UQZMZ0YRYwmZhADxG9ELnGU+JY4SexDQwwGUaFQACY9kribuJeYCZFOejIG0a8Qx4gm4rxvtWPBPrGIqIvpp4jGPb3EWeJBIs+PevrRw9cSG4jFFnNClOhATx0nGokITLYNwyoTJn4LMYWYZtHz64gXcW/Ce3gEsZ7oMemZduIT4mYi7CBP7oBcYiTxKvGnSd67idlu6+1W7DyYb1SpDFew2i/zg/AHiCalnBbiNWJaIgTzWO1UKvAzscTH+UAljVhF7FHK5fE9K0jBTxIDosALRGWAQlUyiXWK6DNOetpJYR8qBR0lChIo1oDnhKfQ2EZqJcr8FLxeEfvZMAhVuVWZQ3icV/gheKUi9kASiDUYQ3ws6tZIFHsRPF4R+30SiZWvsmOoH/f4m5jkXAn+XJkcMpNQMDOfGEI9eV1Q5UbwGmWJV+igAqk+9p7uvRsV057lRLBqyqscVpRXS19gclvn8NlNxC68FbIdNs52Ydr7zZ63eviQEHvCZc98JPKYo/ncQvHM6y7KzSG68fwgsUJHMI/T86LgZS7EMulEG/Ko03y2QZhkyGVDPyTqflxH8FrxwGmNAsIgTYg1vl8u8rotTl6rxL03uhjDssPkanCinWC2+ZPCJBbGyTwP430UejRkMzz+irN6MtbnX5o0aqrDCXObEPyMneA7xY2/amTOIrNQiFVvzBV51ljc85y453KT7zMc9vYCog/5/SgbTG3J98Ust9bBTiZeZd4VgoqU78aJJeJmm17LADp1ugQ7OE4dxGSrHm4Q7pebfFwYsMn3W5jsTnzepuEsGIuZWMest4iheY+Z4AyxWhl0OWHY8Yjo5aX47Crx2XLNnptqt3QUVIq8d5oJvlL0whHNTJ1SLzwWmVhgxLBI0PWAlBCXadxbJAQ3GJ9Lp9sUONM4HYajze+0DA64QuIQUUH0EJWaz/cTncQEuIPtUh9xDtcFhoNROuKXiOu9HoXNJl6CxzIqvI494v/Z+BuBDzqf/eT4LA33ryZ+F/lGkMegyMcq8fcNxAL8P4kd/WFx5JIhMu33KPgKolzz3jyiyuK7QkUwpyGii7gQJ99e4gyuc4giKTiKY5EUtPI5j4I7YVJqiqD3slFOFBULWfi0ey3y6BPWYHeCYdQhy7BmadKlorebPAo+SExEoWrvcOF1+J7PlG5AmVJwCM92WAgZ0Jxj+q0O07iAP4hiZDgNpwRuE4+xsza9P6RMQk5Tl+Z9raKRCuRxKQtuFiZTqnMQ56FBIqLH3STdo5YJoq5dsoejwt75s8kamaWh4maHU2NxThRRZtMY8h+N/y8llps0njFL73ZgASNgMTFRp+tFuQfVMfy3uC7RKGAIFQ2ZiJ5HbNPIgxt2h833fLb8k6bgIaUe+eLw/RQa8V8TxWFxCF2ieVgeCziyIOTQzGXv8kH7eDFvdKg9XIeXOrfMGOIaYr9L0b8Q1TYmXYNJhCfKjTYm7eVtsVpc15odl4awhjY2DxsCdKsafuQfAsqfd0s7UMYQTin+s5Y2Qg2Mni9PCSaFRQhEVkBlRMWrqw/D1XSsbRfX8zVfT8ma1hB3YaZuthJ8gDiBa15bP3ERC+a19geYTyxnUzbrF8REczuWgE7ivtKNV8DFEpi2i6gXu5UtDsdONkSnive0+qqZJHZVwx6Yxvb+MvEO/l9ErIizQFCD0UJY9QyIvWtUrMzew3bteKIFW4Ut8R51KwZ9Cl7aM+Tgt0nXYQXVgvvbMWP22ixU/EocBNftNmyJfUKnhF/ooOY7sMDhIZhf0T61cM2WezkQrxA+Y46peDtJz4e3i46p9SI4A35kGR9Vk2Rin1ViPZZ6jfEoFUtBIzbq+SQR+7Ryjl3rVxTPGASzyMRmlD+MYquV+nzqd5xWMRzmMr2l6RT3mz0mjR9IJN5Molkp7CtiMU4RgxZ6v1I274QeDjrWcg4iZWXqxil/mcPoWR2yEPJoFrFblaho2hBCePcqleBD7X0+BZpOx+TYopQRRRkzExk+LMMLtpq0fj8Ozh6FuRsnf/IgXZ0UJ+Eg+3GM0Q6TfDmm8jEvVuRHRHwYv23YDE+lVaqH25TdSEewcciB7zgPPvGwzabkDWITcTqZfuTBgu4jZhErPe5lW+GBYafE157C/gMULBM76e6Aq2gufNC52D3JX7m0QwyL5J/1fEd8A7dMLFG7pSBSHhz0U2HWA8KF2pgS0O+UhlNwUqR/BBgA8TWxhnOqY/oAAAAASUVORK5CYII=" alt="" srcset="">
                 <div class="white-line"></div>
                 <span>看病买药有报销</span>
-                <!-- 遮罩 -->
                 <div class="overload">
                     <p>看病就医及时报，生活更有保障</p>
                     <button>立即咨询</button>
@@ -188,7 +174,6 @@
                 <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADwAAAA8CAYAAAA6/NlyAAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAAyhpVFh0WE1MOmNvbS5hZG9iZS54bXAAAAAAADw/eHBhY2tldCBiZWdpbj0i77u/IiBpZD0iVzVNME1wQ2VoaUh6cmVTek5UY3prYzlkIj8+IDx4OnhtcG1ldGEgeG1sbnM6eD0iYWRvYmU6bnM6bWV0YS8iIHg6eG1wdGs9IkFkb2JlIFhNUCBDb3JlIDUuNi1jMTM4IDc5LjE1OTgyNCwgMjAxNi8wOS8xNC0wMTowOTowMSAgICAgICAgIj4gPHJkZjpSREYgeG1sbnM6cmRmPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5LzAyLzIyLXJkZi1zeW50YXgtbnMjIj4gPHJkZjpEZXNjcmlwdGlvbiByZGY6YWJvdXQ9IiIgeG1sbnM6eG1wPSJodHRwOi8vbnMuYWRvYmUuY29tL3hhcC8xLjAvIiB4bWxuczp4bXBNTT0iaHR0cDovL25zLmFkb2JlLmNvbS94YXAvMS4wL21tLyIgeG1sbnM6c3RSZWY9Imh0dHA6Ly9ucy5hZG9iZS5jb20veGFwLzEuMC9zVHlwZS9SZXNvdXJjZVJlZiMiIHhtcDpDcmVhdG9yVG9vbD0iQWRvYmUgUGhvdG9zaG9wIENDIDIwMTcgKE1hY2ludG9zaCkiIHhtcE1NOkluc3RhbmNlSUQ9InhtcC5paWQ6MzA5MDg2NTg5QzIwMTFFODg0QjdCRkI4M0Y0Nzg4MjYiIHhtcE1NOkRvY3VtZW50SUQ9InhtcC5kaWQ6MzJFQjgzRjg5QzIwMTFFODg0QjdCRkI4M0Y0Nzg4MjYiPiA8eG1wTU06RGVyaXZlZEZyb20gc3RSZWY6aW5zdGFuY2VJRD0ieG1wLmlpZDozMDkwODY1NjlDMjAxMUU4ODRCN0JGQjgzRjQ3ODgyNiIgc3RSZWY6ZG9jdW1lbnRJRD0ieG1wLmRpZDozMDkwODY1NzlDMjAxMUU4ODRCN0JGQjgzRjQ3ODgyNiIvPiA8L3JkZjpEZXNjcmlwdGlvbj4gPC9yZGY6UkRGPiA8L3g6eG1wbWV0YT4gPD94cGFja2V0IGVuZD0iciI/Ph4qDJMAAAcISURBVHja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" alt="" srcset="">
                 <div class="white-line"></div>
                 <span>看病买药有报销</span>
-                <!-- 遮罩 -->
                 <div class="overload">
                     <p>看病就医及时报，生活更有保障</p>
                     <button>立即咨询</button>
@@ -198,7 +183,6 @@
                 <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADwAAAA8CAYAAAA6/NlyAAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAAyhpVFh0WE1MOmNvbS5hZG9iZS54bXAAAAAAADw/eHBhY2tldCBiZWdpbj0i77u/IiBpZD0iVzVNME1wQ2VoaUh6cmVTek5UY3prYzlkIj8+IDx4OnhtcG1ldGEgeG1sbnM6eD0iYWRvYmU6bnM6bWV0YS8iIHg6eG1wdGs9IkFkb2JlIFhNUCBDb3JlIDUuNi1jMTM4IDc5LjE1OTgyNCwgMjAxNi8wOS8xNC0wMTowOTowMSAgICAgICAgIj4gPHJkZjpSREYgeG1sbnM6cmRmPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5LzAyLzIyLXJkZi1zeW50YXgtbnMjIj4gPHJkZjpEZXNjcmlwdGlvbiByZGY6YWJvdXQ9IiIgeG1sbnM6eG1wPSJodHRwOi8vbnMuYWRvYmUuY29tL3hhcC8xLjAvIiB4bWxuczp4bXBNTT0iaHR0cDovL25zLmFkb2JlLmNvbS94YXAvMS4wL21tLyIgeG1sbnM6c3RSZWY9Imh0dHA6Ly9ucy5hZG9iZS5jb20veGFwLzEuMC9zVHlwZS9SZXNvdXJjZVJlZiMiIHhtcDpDcmVhdG9yVG9vbD0iQWRvYmUgUGhvdG9zaG9wIENDIDIwMTcgKE1hY2ludG9zaCkiIHhtcE1NOkluc3RhbmNlSUQ9InhtcC5paWQ6MzA5MDg2NTg5QzIwMTFFODg0QjdCRkI4M0Y0Nzg4MjYiIHhtcE1NOkRvY3VtZW50SUQ9InhtcC5kaWQ6MzJFQjgzRjg5QzIwMTFFODg0QjdCRkI4M0Y0Nzg4MjYiPiA8eG1wTU06RGVyaXZlZEZyb20gc3RSZWY6aW5zdGFuY2VJRD0ieG1wLmlpZDozMDkwODY1NjlDMjAxMUU4ODRCN0JGQjgzRjQ3ODgyNiIgc3RSZWY6ZG9jdW1lbnRJRD0ieG1wLmRpZDozMDkwODY1NzlDMjAxMUU4ODRCN0JGQjgzRjQ3ODgyNiIvPiA8L3JkZjpEZXNjcmlwdGlvbj4gPC9yZGY6UkRGPiA8L3g6eG1wbWV0YT4gPD94cGFja2V0IGVuZD0iciI/Ph4qDJMAAAcISURBVHja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" alt="" srcset="">
                 <div class="white-line"></div>
                 <span>看病买药有报销</span>
-                <!-- 遮罩 -->
                 <div class="overload">
                     <p>看病就医及时报，生活更有保障</p>
                     <button>立即咨询</button>
@@ -206,13 +190,13 @@
             </li>
         </ul>
     </div>
-</div>
+</div> -->
 <!-- 回到顶部 -->
 <div class="right-bottom">
     <a href="#top" title="回到顶部"><img src="./img/icon-totop.png" class="totop-icon"></a>
 </div>
 <!-- 易参保服务 -->
-<section class="my-service">
+<!-- <section class="my-service">
     <p class="child-title">易参保服务</p>
     <ul class="ser-list row">
         <li class="col-sm-12 col-md-4">
@@ -255,33 +239,32 @@
             </div>
         </li>
     </ul>
-</section>
-<!-- 为什么选择好社保 -->
+</section> -->
+<!-- 为什么选择易参保 -->
 <div class="good-server">
     <section class="index_list_item">
-        <h4 class="index_list_item_title">为什么要选择易参保？</h4>
+        <h4 class="index_list_item_title">综合用工管理</h4>
         <ul class="index_jilei_list clearFix">
             <li class="fl index_jilei_item">
                 <div class="top_bg">
                     <img class="fl" src="https://static.cache.51shebao.com/201908131201/statics/output/images/v6_images/index/jilei1.png" alt="">
                 </div>
-                <h4>缴纳速度快</h4>
-                <p>微信扫一扫，线上一键缴社保 订单秒响应，参保进度实时查 询。关注“好社保”服务号</p>
+                <h4>社保&公积金代理</h4>
+                <p>28项常规代理服务，赠送社保转移、待遇申领、政策咨询等服务</p>
             </li>
             <li class="fl index_jilei_item">
                 <div class="top_bg">
                     <img class="fl" src="https://static.cache.51shebao.com/201908131201/statics/output/images/v6_images/index/jilei2.png" alt="">
                 </div>
-                <h4>过程透明</h4>
-                <p>参保数据实时同步，服务进展随 时反馈，参保动态短信通知， 轻松掌握参保进度</p>
+                <h4>社保补贴申请</h4>
+                <!-- <p>参保数据实时同步，服务进展随 时反馈，参保动态短信通知， 轻松掌握参保进度</p> -->
             </li>
             <li class="fl index_jilei_item">
                 <div class="top_bg">
                     <img class="fl" src="https://static.cache.51shebao.com/201908131201/statics/output/images/v6_images/index/jilei3.png" alt="">
                 </div>
-                <h4>结果可查</h4>
-                <p>缴纳成功后可在公众号和社保</p>
-                <p>官网同步查询缴纳结果，随时更新</p>
+                <h4>劳务派遣</h4>
+                <!-- <p>缴纳成功后可在公众号和社保</p> -->
             </li>
         </ul>
         <ul class="index_jilei_list clearFix">
@@ -289,49 +272,93 @@
                 <div class="top_bg">
                     <img class="fl" src="https://static.cache.51shebao.com/201908131201/statics/output/images/v6_images/index/jilei1.png" alt="">
                 </div>
-                <h4>缴纳速度快</h4>
-                <p>微信扫一扫，线上一键缴社保 订单秒响应，参保进度实时查 询。关注“好社保”服务号</p>
+                <h4>工资代发</h4>
+                <!-- <p>微信扫一扫，线上一键缴社保 订单秒响应，参保进度实时查 询。关注“好社保”服务号</p> -->
             </li>
             <li class="fl index_jilei_item">
                 <div class="top_bg">
                     <img class="fl" src="https://static.cache.51shebao.com/201908131201/statics/output/images/v6_images/index/jilei2.png" alt="">
                 </div>
-                <h4>过程透明</h4>
-                <p>参保数据实时同步，服务进展随 时反馈，参保动态短信通知， 轻松掌握参保进度</p>
+                <h4>招聘RPO</h4>
+                <!-- <p>参保数据实时同步，服务进展随 时反馈，参保动态短信通知， 轻松掌握参保进度</p> -->
             </li>
             <li class="fl index_jilei_item">
                 <div class="top_bg">
                     <img class="fl" src="https://static.cache.51shebao.com/201908131201/statics/output/images/v6_images/index/jilei3.png" alt="">
                 </div>
-                <h4>结果可查</h4>
-                <p>缴纳成功后可在公众号和社保</p>
-                <p>官网同步查询缴纳结果，随时更新</p>
+                <h4>政策、法律咨询</h4>
+                <!-- <p>缴纳成功后可在公众号和社保</p> -->
             </li>
         </ul>
     </section>
 </div>
 <!--标准化服务 合法合规降本增效 -->
-<div class="index_list server_list_section">
-    <section class="index_list_item server_list clearFix">
-        <h4 class="index_list_item_title">标准化服务 合法合规降本增效</h4>
-        <img class="fr" src="https://static.cache.51shebao.com/201908131201/statics/output/images/v6_images/index/pic_jiesuan.png" alt="">
-        <ul class="fl  left-info">
-            <li class="fl">
-                <h4 class="shebao_title small_icon1"><span></span>合法合规，规避风险</h4>
-                <p class="shebao_tip">助力企业合法规避用工争议及风险</p>
+<div class="stander-server">
+    <div class="index_list server_list_section">
+        <section class="index_list_item server_list clearFix">
+            <h4 class="index_list_item_title">服务价值</h4>
+            <img class="fr" src="https://static.cache.51shebao.com/201908131201/statics/output/images/v6_images/index/pic_jiesuan.png" alt="">
+            <ul class="fl  left-info">
+                <li class="fl">
+                    <h4 class="shebao_title small_icon1"><span></span>优化劳动力价值</h4>
+                    <p class="shebao_tip">专注做人力资源核心业务，</p>
+                    <p class="shebao_tip">不受事务性工作牵绊</p>
+                </li>
+                <li class="fl">
+                    <h4 class="shebao_title small_icon2"><span></span>规避用工风险</h4>
+                    <p class="shebao_tip">用工关系转移到第三方公司，</p>
+                    <p class="shebao_tip">最大程度规避法律风险</p>
+                </li>
+                <li class="fl">
+                    <h4 class="shebao_title small_icon3"><span></span>提高工作规范性</h4>
+                    <p class="shebao_tip">流程严谨、数据合规，</p>
+                    <p class="shebao_tip">减少未来发展的隐患</p>
+                </li>
+                <li class="fl">
+                    <h4 class="shebao_title small_icon4"><span></span>优化财务指标</h4>
+                    <p class="shebao_tip">由岗位成本转为费用，</p>
+                    <p class="shebao_tip">优化企业财务效果</p>
+                </li>
+            </ul>
+        </section>
+    </div>
+</div>
+<!-- 高效服务 -->
+<div class="gaoxiao-server">
+    <section class="index_list_item">
+        <h4 class="index_list_item_title"> 我们的优势</h4>
+        <ul class="index_jilei_list clearFix">
+            <li class="fl index_jilei_item">
+                <div class="top_bg">
+                    <img class="fl" src="https://static.cache.51shebao.com/201908131201/statics/output/images/v6_images/index/jilei1.png" alt="">
+                </div>
+                <h4>专项优质服务</h4>
+                <p>专项小组服务，二十年人社服务从业经验，快速响应</p>
             </li>
-            <li class="fl">
-                <h4 class="shebao_title small_icon2"><span></span>满足多元化用工场景</h4>
-                <p class="shebao_tip">快速适应复杂多变市场环境</p>
+            <li class="fl index_jilei_item">
+                <div class="top_bg">
+                    <img class="fl" src="https://static.cache.51shebao.com/201908131201/statics/output/images/v6_images/index/jilei2.png" alt="">
+                </div>
+                <h4>无隐形收费</h4>
+                <p>无隐形收费，工伤、转移、证明提供统统免费</p>
             </li>
-            <li class="fl">
-                <h4 class="shebao_title small_icon3"><span></span>平台操作，方便便捷</h4>
-                <p class="shebao_tip">一站式服务，解决多类用工关系难点</p>
+            <li class="fl index_jilei_item">
+                <div class="top_bg">
+                    <img class="fl" src="https://static.cache.51shebao.com/201908131201/statics/output/images/v6_images/index/jilei3.png" alt="">
+                </div>
+                <h4>专人负责政策咨询</h4>
+                <p>社保知识培训和问答社区，</p>
+                <p>提高工作效率</p>
             </li>
-            <li class="fl">
-                <h4 class="shebao_title small_icon4"><span></span>财税优化，降低用工成本</h4>
-                <p class="shebao_tip">企业成本精算，优化薪酬结构</p>
+            <li class="fl index_jilei_item">
+                <div class="top_bg">
+                    <img class="fl" src="https://static.cache.51shebao.com/201908131201/statics/output/images/v6_images/index/jilei4.png" alt="">
+                </div>
+                <h4>专业有保障</h4>
+                <p>上市公司，部级资质</p>
+                <p>安全有保障</p>
             </li>
+
         </ul>
     </section>
 </div>
@@ -376,6 +403,43 @@
     </div>
     <img class="code" src="./img/qrcode.jpg">
 </section>
+<!-- 用户注册 -->
+<div id="user_register">
+    <div class="register_content">
+        <h4 class="register_title">一步注册，资料包免费送</h4>
+        <form class="form_box" id="step_experise" onsubmit="return formValidate()">
+            <ul class="register_list">
+                <li>
+                    <span class="icon"></span>
+                    <input class="borRadius2" required type="text" name="name" value="" maxlength="20" id="input_name" placeholder="您的姓名">
+                    <em class="iIcon">*</em>
+                </li>
+                <li>
+                    <span class="icon icon2"></span>
+                    <input class="borRadius2" required type="text" name="phone" value="" id="input_phone" placeholder="您的联系方式">
+                    <em class="iIcon">*</em>
+                </li>
+                <li>
+                    <span class="icon icon3"></span>
+                    <input class="borRadius2 form-control" required type="email" maxlength="" id="input_email" name="email" value="" placeholder="您的邮箱">
+                    <em class="iIcon">*</em>
+                </li>
+                <li>
+                    <span class="icon icon4"></span>
+                    <input class="borRadius2" type="text" maxlength="" id="company_name" name="company" value="" placeholder="企业名称">
+                </li>
+            </ul>
+            <button type="submit" class="form_submit register_list_submit submit_red">提交</button>
+        </form>
+    </div>
+</div>
+<!-- 注册信息提示模态框 -->
+<div class="message_mask no_mask" id="alert-message">
+    <div id="dilog" class="succ_sign fail_sign">
+        <span id="dilog_tit">提交成功</span>
+        <span id="dilog_cont">请确认手机号格式</span>
+    </div>
+</div>
 <!--底部-->
 <div class="footer">
     <div class="footer-container">
